@@ -24,8 +24,8 @@ author:
 
 # Grid navigation
 grid_navigation:
-    - title: Grid navigation
-      excerpt: Section description
-      cta: Read more
+    - title: Setting up your first Master Node
+      excerpt: Step by Step instructions for setting up your first $Pac MN
+      cta: First Steps
       url: '#'
 ---
