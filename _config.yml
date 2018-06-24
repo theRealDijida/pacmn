@@ -2,7 +2,7 @@
 doks:
     baseurl: /pacmn
     ulr: https://therealdijida.github.io
-    color_theme: # Available themes: blue (default), green, purple, red and yellow
+    color_theme: yellow # Available themes: blue (default), green, purple, red and yellow
     header:
         logo:
             text: $Pac Master Node Guide
