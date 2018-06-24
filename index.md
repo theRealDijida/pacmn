@@ -4,8 +4,8 @@ layout: homepage
 keywords:
 
 # Hero section
-title: Project name
-description: Project description
+title: $Pac Master Node Guilde
+description: Evolving Guide for setting up and maintaining Master Nodes for $Pac
 buttons:
     - content: Button
       url: '#'
