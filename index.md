@@ -28,4 +28,7 @@ grid_navigation:
       excerpt: Step by Step instructions for setting up your first $Pac MN
       cta: First Steps
       url: '#'
----
+---- title: Trouble Shooting
+      excerpt: Fixes to Common Problems
+      cta: Read More
+      url: '#'
