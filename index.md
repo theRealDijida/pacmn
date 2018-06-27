@@ -25,7 +25,7 @@ grid_navigation:
       cta: First Steps
       url: '#'
     - title: Trouble Shooting
-      excerpt: Fixes to common errors
+      excerpt: Solutions to common problems.
       cta: Read More
       url: 'troubleshooting'
     - title: Useful Links
