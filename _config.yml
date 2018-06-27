@@ -6,20 +6,19 @@ doks:
     header:
         logo:
             text: $Pac Master Node Guide
-            image:
+            image: 
         nav:
-            - item_name: Item 1
-              item_url: '#'
-            - item_name: Item 2
-              item_url: '#'
-            - item_name: Item 3
-              item_url: '#'
+            # - item_name: Item 1
+            #  item_url: '#'
+            # - item_name: Item 2
+            #  item_url: '#'
+            # - item_name: Item 3
+            #  item_url: '#'
     footer:
         content:
             logo:
-                text: Project name
-                image:
-            copyright: Copyright &copy; 2017. - Project name <br>All rights reserved.
+                text: $Pac Master Node Guide
+                image:            
         social_list:
             - network_name: facebook
               profile_url: '#'
@@ -29,10 +28,12 @@ doks:
               profile_url: '#'
             - network_name: youtube
               profile_url: '#'
+            - network_name: discord
+              profile_url: '#'
     google_analytics:
         tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
     comments:
-        disqus_forum_shortname: # Add your disqus forum shortname to activate comments
+        disqus_forum_shortname: dijida # Add your disqus forum shortname to activate comments
 
 # SASS settings
 sass:

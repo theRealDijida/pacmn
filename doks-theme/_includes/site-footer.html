@@ -17,7 +17,12 @@
 				</div><!-- /.col -->
 				{% if site.doks.footer.social_list %}
 					<div class="col-sm-6 align-right">
+
+							<p class="site-footer__logo">Official $Pac Social Links&nbsp;&nbsp;&nbsp;</p>
+
 						<ul class="social-list">
+						
+							<!--
 							{% for item in site.doks.footer.social_list %}
 								<li>
 									<a href="{{ item.profile_url }}" target="_blank" class="social-list__item social-list__item--{{ item.network_name }}">
@@ -25,6 +30,47 @@
 									</a>
 								</li>
 							{% endfor %}
+							-->
+
+
+							<span style="font-size: 48px;">
+								<span style="color:#7289DA;">
+									<a href="http://discord.me/pac" target="_blank" style="border: none">
+										<i class="fab fa-discord"></i>
+									</a>
+								</span>
+								<span style="color: #55acee;">
+									<a href="https://twitter.com/Paccoinofficial" target="_blank" style="border: none">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</span>
+								<span style="color: #ff5700;">
+									<a href="https://www.reddit.com/r/paccoinofficial/" target="_blank" style="border: none">
+										<i class="fab fa-reddit"></i>
+									</a>
+								</span>
+								<span style="color: #3b5999;">
+									<a href="https://www.facebook.com/groups/923244864518299/" target="_blank" style="border: none">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</span>
+								<span >
+									<a href="https://www.youtube.com/channel/UC4RnYztNPllFyDEtv6DB4ww" target="_blank" style="border: none">
+										<i class="fab fa-youtube" style="color: #cd201f;"></i>
+									</a>
+								</span>
+								<span style="color: #e4405f;">
+									<a href="https://www.instagram.com/pac_coin/" target="_blank" style="border: none">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</span>
+								<span style="color: #4078c0;">
+									<a href="https://github.com/PACCommunity/PAC" target="_blank" style="border: none">
+										<i class="fab fa-github"></i>
+									</a>
+								</span>
+								
+							</span>
 						</ul><!-- /.social-list -->
 					</div><!-- /.col -->
 				{% endif %}
@@ -40,3 +86,4 @@
 <script type="text/javascript" src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/doks-theme/assets/js/scripts.min.js"></script>
 
 {% include google-analytics.html %}
+

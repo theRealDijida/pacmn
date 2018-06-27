@@ -4,23 +4,19 @@ layout: homepage
 keywords:
 
 # Hero section
-title: $Pac Master Node Guilde
-description: Evolving Guide for setting up and maintaining Master Nodes for $Pac
+title: $Pac Master Node Guide
+description: Unofficial Evolving Guide for setting up and maintaining Master Nodes for $Pac 
 buttons:
-    - content: Button
-      url: '#'
-      external_url: false
+    - icon: discord
+      content: Discord
+      url: 'https://discord.gg/Bx2HKfy'
+      external_url: true
     - icon: github
       content: Button with icon
       url: '#'
       external_url: true
 
-# Author box
-author:
-    title: About Author
-    title_url: '#'
-    external_url: true
-    description: Author description
+
 
 # Grid navigation
 grid_navigation:
@@ -28,8 +24,19 @@ grid_navigation:
       excerpt: Step by Step instructions for setting up your first $Pac MN
       cta: First Steps
       url: '#'
-    - title: Troubleshooting
+    - title: Trouble Shooting
       excerpt: Fixes to common errors
       cta: Read More
-      url: '#'
+      url: 'troubleshooting'
+    - title: Useful Links
+      excerpt: Collection of useful links to make the most of your Master Node experience.
+      cta: Read More
+      url: 'links'
+    - title: MN Hodler Blog
+      excerpt: Random thoughts on hosting your own MN and anything $Pac
+      cta: Read More
+      url: 'blog'
+    
 ---
+
+

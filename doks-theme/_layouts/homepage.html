@@ -4,6 +4,21 @@
 		{% include site-head.html %}
 	</head>
 	<body class="{{ site.doks.color_theme }}">
+		
+			<header class="site-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+									<a href="http://www.paccoin.net" target="_blank" class="site-header__logo">
+										<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/doks-theme/assets/images/layout/logo.png">
+									</a><!-- /.site-header__logo -->
+								
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.container -->
+				</header><!-- /.site-header -->
+
+
 		<div class="hero-subheader{% if page.grid_navigation %} hero-subheader--before-out{% endif %}">
 			<div class="container">
 				<div class="row">
@@ -16,6 +31,8 @@
 								{% if page.description %}
 									<p class="hero-subheader__desc">{{ page.description }}</p>
 								{% endif %}
+
+								<!--
 								{% for button in page.buttons %}
 									{% if button.external_url == true %}
 									<a href="{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon">
@@ -29,6 +46,7 @@
 									</a>
 									{% endif %}
 								{% endfor %}
+								-->
 							</div><!-- /.align-inner -->
 						</div><!-- /.align-container -->
 					</div><!-- /.col -->
@@ -56,6 +74,12 @@
 							</div><!-- /.align-container -->
 						</div><!-- /.col -->
 					{% endif %}
+
+					<!--Price Tracker-->
+					<div class="col-md-4 col-md-offset-1 hidden-xs hidden-sm">
+					<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1107" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="true"></div>
+					</div>
+					
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 		</div><!-- /.hero-subheader -->
