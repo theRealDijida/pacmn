@@ -20,8 +20,8 @@ buttons:
 
 # Grid navigation
 grid_navigation:
-    - title: Setting up your first Master Node
-      excerpt: Step by Step instructions for setting up your first $Pac MN
+    - title: Setting up your first Master Node.
+      excerpt: Step by Step instructions for setting up your first $Pac Master Node
       cta: First Steps
       url: '#'
     - title: Trouble Shooting
