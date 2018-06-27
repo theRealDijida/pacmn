@@ -27,7 +27,7 @@ grid_navigation:
     - title: Trouble Shooting
       excerpt: Solutions to common problems.
       cta: Read More
-      url: 'troubleshooting'
+      url: '/troubleshooting'
     - title: Useful Links
       excerpt: Collection of useful links to make the most of your Master Node experience.
       cta: Read More
