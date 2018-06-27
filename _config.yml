@@ -1,6 +1,6 @@
 # Theme settings
 doks:
-    baseurl: /pacmn
+    baseurl: /pacmn/
     ulr: https://therealdijida.github.io
     color_theme: # Available themes: blue (default), green, purple, red and yellow
     header:
@@ -45,3 +45,4 @@ layouts_dir: ./doks-theme/_layouts
 includes_dir: ./doks-theme/_includes
 exclude: [ 'README.md', 'CHANGELOG.md' ]
 permalink: /:title/
+jekyll.environment: production
