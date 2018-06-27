@@ -1,7 +1,7 @@
 # Theme settings
 doks:
-    baseurl: /pacmn
-    url: https://therealdijida.github.io
+    baseurl: 
+    url: https://therealdijida.github.io/pacmn
     color_theme: # Available themes: blue (default), green, purple, red and yellow
     header:
         logo:
