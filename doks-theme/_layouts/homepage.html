@@ -92,7 +92,8 @@
 								<div class="row">
 									{% for item in page.grid_navigation %}
 										<div class="col-sm-6 col-lg-4">
-											<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ item.url }}" class="nav-grid__item">
+											<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ item.url }}" 
+											class="nav-grid__item" {% if item.external %} target="_blank" {% endif %}>
 												<div class="nav-grid__content" data-mh>
 													<h2 class="nav-grid__title">{{ item.title }}</h2>
 													<p>{{ item.excerpt }}</p>
@@ -111,6 +112,34 @@
 				</div><!-- /.container -->
 			</div><!-- /.section -->
 		{% endif %}
+
+		<!-- First Blog Entry -->
+		<div class="section section--darker-theme-color-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="callout callout--info">	
+							{% assign post = site.posts.first %}  
+							<a href={{post.url}}>
+								<h3>Latest Post</h3>
+								<h2></h2>
+								<h5>{{post.date | date: '%B %d, %Y' }}</h5>
+								<h4>{{ post.title}}</h4>
+								<p>
+									{{ post.excerpt }}
+								</p>
+							</a>
+								
+						</div>
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.section -->
+
 		{% include site-footer.html %}
+
+		
+
+		
 	</body>
 </html>

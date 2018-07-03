@@ -41,9 +41,16 @@
 	margin-top: 0;
 }
 
-/* ----- Title ----- */
+/* ----- Desc ----- */
 .hero-subheader__desc {
-	margin-bottom: 1.875rem;
+	/*margin-bottom: 1.875rem;*/
+	font-size: $font-size-h4;
+}
+
+/* ----- Date ----- */
+.hero-subheader__date {
+	/*margin-bottom: 1.875rem;*/
+	font-size: $font-size-h4;
 }
 
 /* ----- Author ----- */

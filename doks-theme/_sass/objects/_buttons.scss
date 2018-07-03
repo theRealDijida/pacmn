@@ -12,6 +12,17 @@
 }
 
 /* ----- Variations ----- */
+
+.clipbtn {
+	opacity:1;
+	cursor:pointer;
+    position:absolute;
+    padding: 2px 2px;
+    transition:opacity 0.3s ease-in-out;
+    -webkit-transition:opacity 0.3s ease-in-out;-o-transition:opacity 0.3s ease-in-out;
+  }
+.clipbtn:hover{opacity:1;}
+
 .btn--full-width {
 	display: block;
 	width: 100%;

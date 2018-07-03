@@ -5,8 +5,8 @@ keywords:
 comments: false
 
 # Hero section
-title: Trouble Shooting
-description: Page description
+title: First Steps
+description: Step by Step instructions for setting up your first $Pac Master Node
 
 
 # Micro navigation
@@ -15,11 +15,11 @@ micro_nav: true
 # Page navigation
 page_nav:
     prev:
-        content:
-        url: 
+        content: Previous page
+        url: '/'
     next:
-        content:
-        url: 
+        content: Master Node Voting
+        url: '/governance'
 
 # disqus
 comments: true
@@ -70,9 +70,16 @@ Click the <i class="fas fa-copy"></i> copy button above (directly below the comm
 ./paccoin-cli stop
 ```
 
-```
-no copy
-```
+
+Steps to create your Master Node
+1. Install your desktop wallet
+2. Collatoralize your Master Node
+3. Install Master Node server on your VPS
+4. Start your Master Node
+5. Monitor your Master Node
+
+- [ ] &nbsp; step 1
+- [x] &nbsp; (2)  step 2
 
 <div class="callout callout--info">
     <p><strong>Info!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

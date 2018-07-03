@@ -4,8 +4,8 @@ layout: homepage
 keywords:
 
 # Hero section
-title: $Pac Master Node Guide
-description: Unofficial Evolving Guide for setting up and maintaining Master Nodes for $Pac 
+title: $Pac Masternode Guide
+description: <i>Unofficial</i> Evolving Guide for setting up and <br/> maintaining Masternodes for $Pac 
 buttons:
     - icon: discord
       content: Discord
@@ -23,20 +23,16 @@ grid_navigation:
     - title: Setting up your first Master Node.
       excerpt: Step by Step instructions for setting up your first $Pac Master Node
       cta: First Steps
-      url: '#'
+      url: '/first-steps'
     - title: Trouble Shooting
-      excerpt: Solutions to common problems.
+      excerpt: Solutions to common problems and helpful tips.
       cta: Read More
       url: '/troubleshooting'
     - title: Useful Links
-      excerpt: Collection of useful links to make the most of your Master Node experience.
-      cta: Read More
-      url: 'links'
-    - title: MN Hodler Blog
-      excerpt: Random thoughts on hosting your own MN and anything $Pac
-      cta: Read More
-      url: 'blog'
-    
+      excerpt: Collection of handy links to make the most of your Master Node experience.
+      cta: Main $Pac Site
+      url: 'https://paccoin.net/useful-links/'     
+      external: true
 ---
 
 

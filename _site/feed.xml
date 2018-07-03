@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-03T14:56:20-04:00</updated><id>http://localhost:4000/</id><entry><title type="html">$Pac Masternodes</title><link href="http://localhost:4000/pac-masternodes/" rel="alternate" type="text/html" title="$Pac Masternodes" /><published>2018-06-24T11:07:10-04:00</published><updated>2018-06-24T11:07:10-04:00</updated><id>http://localhost:4000/pac-masternodes</id><content type="html" xml:base="http://localhost:4000/pac-masternodes/">&lt;h2 id=&quot;pac-is-community&quot;&gt;$Pac is Community&lt;/h2&gt;
+
+&lt;p&gt;The first thing that comes to mind when I think about $Pac is community. Sure, $Pac is a cryptocurrency with a great foundation based on Dash. In a lot of ways it has risen from the ashes of the RCO, more FUD than you can shake a stick at, and more than it’s fair share of challenges. Out of all that, and despite all of that, what I have found is that the $Pac community drives the very core of its intrinsic value.&lt;/p&gt;
+
+&lt;p&gt;This is what attracted me to $Pac in the first place. $Pac has many social channels (see the footer at the bottom of this page), but it’s most active social channel is Discord. There I found a wide and diverse group of fellow enthusiasts and investors. Beyond that, the amount of help and assistance the community gives to support each other I have found to be second to none.&lt;/p&gt;
+
+&lt;h2 id=&quot;masternodes&quot;&gt;Masternodes&lt;/h2&gt;
+
+&lt;p&gt;Masternodes serve a dual purpose in the $Pac network. Unlike cryptocurrencies that lack a Masternode (MN) network tier, Masternodes play both a utility role for the $Pac network as well as offering MN holders (investors) the opportunity to get paid via rewards for their service. MNs provide the capability of &lt;em&gt;instantPac&lt;/em&gt; which allows for instantaneous electronic notification of sends and receives of $Pac between two parties, necessary to provide the same convenience of experience as traditional financial retail transactions. Masternodes reward their holders via portion of the block rewards that are minted through mining (Proof of Work). More information can be found in the excellent &lt;a href=&quot;https://docs.dash.org/en/latest/masternodes/index.html&quot; target=&quot;_blank&quot;&gt;Dash Documentation Portal&lt;/a&gt;. In fact, you if you want to book up on Masternodes and how they work, you will find no better resource.&lt;/p&gt;
+
+&lt;p&gt;Along with providing second tier functions, Masternodes and their holders are what powers the Decentralized Autonomous Organization (DAO) by voting on funding proposals whose budgets are drawn via periodic superblocks. The current list of proposals can be found &lt;a href=&quot;http://stats.foxrtb.com/gov.html&quot; target=&quot;_blank&quot;&gt;Fox’s excellent portal&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;another-mn-guide&quot;&gt;Another MN Guide?&lt;/h2&gt;
+
+&lt;p&gt;Yes another MN guide. There are a few excellent guides already out there. In fact, this guide is based on much of the work found in those guides, including the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://altcoin-guide.com/paccoin-vps-masternode-guide/&quot; target=&quot;_blank&quot;&gt;Alt-Coin Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wakie87.github.io/&quot; target=&quot;_blank&quot;&gt;Wakie87 Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I decided to put this guide together to consolidate a ton of hours that I along with other community members and Mods on the $Pac discord have spent helping others to install and troubleshoot their Masternodes.&lt;/p&gt;
+
+&lt;p&gt;If you have suggestions, add them as comments, or DM me on the &lt;a href=&quot;http://discord.me/pac&quot; target=&quot;_blank&quot;&gt;$Pac Discord Server&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;– Dijida&lt;/p&gt;</content><author><name></name></author><summary type="html">$Pac is Community</summary></entry></feed>

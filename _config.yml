@@ -5,7 +5,7 @@ doks:
     color_theme: # Available themes: blue (default), green, purple, red and yellow
     header:
         logo:
-            text: $Pac Master Node Guide
+            text: $Pac MasterNode Guide
             image: 
         nav:
             # - item_name: Item 1
@@ -17,7 +17,7 @@ doks:
     footer:
         content:
             logo:
-                text: $Pac Master Node Guide
+                text: $Pac MasterNode Guide
                 image:            
         social_list:
             - network_name: facebook
@@ -45,4 +45,7 @@ layouts_dir: ./doks-theme/_layouts
 includes_dir: ./doks-theme/_includes
 exclude: [ 'README.md', 'CHANGELOG.md' ]
 permalink: /:title/
-jekyll.environment: production
+jekyll.environment: "production"
+
+plugins:
+  - jekyll-feed

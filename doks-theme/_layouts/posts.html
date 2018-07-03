@@ -15,7 +15,7 @@
 									<h1 class="hero-subheader__title">{{ page.title }}</h1>
 								{% endif %}
 								{% if page.description %}
-									<p class="hero-subheader__desc">{{ page.description }}</p>
+									<p class="hero-subheader__date">{{page.date | date: '%B %d, %Y' }}</p>
 								{% endif %}
 								{% if page.page_nav.prev.content or page.page_nav.next.content %}
 									{% if page.page_nav.prev.content and page.page_nav.prev.url %}
@@ -136,12 +136,12 @@
 
 		<script>
 			var pre = document.getElementsByTagName('code');
-			
 			for (var i = 0; i < pre.length; i++) {
 			  var button = document.createElement('clipbtn');
 			  button.className = 'clipbtn fas fa-copy';
 			  button.setAttribute('title', 'Click to Copy to Clipboard');
 
+			  
 			  if ($(pre[i]).parents('.language-bash').length) {
 				pre[i].parentNode.appendChild(button, pre[i]);
 			  }

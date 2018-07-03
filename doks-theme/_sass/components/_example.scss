@@ -10,7 +10,7 @@
 	padding: .625rem .625rem .625rem 1.4375rem;
 
 	&::before {
-		content: 'Example';
+		content: '';
 		display: inline-block;
 		margin-top: .25rem;
 		margin-bottom: .25rem;
@@ -32,6 +32,7 @@
 		&:focus,
 		&:active {
 			background-color: $color-yellow;
+			cursor: pointer;
 		}
 
 		&::after {
@@ -41,6 +42,7 @@
 			position: relative;
 			top: .125rem;
 			margin-left: .5rem;
+			cursor: pointer;
 		}
 	}
 }
