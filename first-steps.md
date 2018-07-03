@@ -18,8 +18,8 @@ page_nav:
         content: Previous page
         url: '/'
     next:
-        content: Master Node Voting
-        url: '/governance'
+        content: 
+        url: 
 
 # disqus
 comments: true
