@@ -31,7 +31,7 @@ comments: false
 {% for post in site.posts %}
 
 		<div>
-			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<h1><a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ post.url }}">{{ post.title }}</a></h1>
 			<p class="date">{{ post.date | date: "%b %d, %Y" }}</p>
 		</div>
 		<div>
