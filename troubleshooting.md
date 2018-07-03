@@ -15,8 +15,8 @@ micro_nav: true
 # Page navigation
 page_nav:
     prev:
-        content:
-        url: 
+        content: "/"
+        url: '/'
     next:
         content:
         url: 
