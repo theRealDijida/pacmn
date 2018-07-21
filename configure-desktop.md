@@ -83,7 +83,7 @@ In order to enable this capability, first we need to show the "MasterNodes" tab 
 - 5\. Exit and restart the cold wallet. You should now see the "Masternodes" tab on the left hand side below "Transactions".
 
 <div align="center">
-<img src="images/mn-tab.png" style="width:168px;height:400px;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/mn-tab.png" style="width:168px;height:400px;"/>
 </div>
 
 
