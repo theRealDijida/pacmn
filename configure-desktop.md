@@ -70,7 +70,7 @@ In order to enable this capability, first we need to show the "MasterNodes" tab 
 
 - 3\. Select "Show Masternodes Tab" 
 
-<img src="/images/mac-wallet-pref.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+<img src="images/mac-wallet-pref.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
 <div class="callout callout--info">
     <p>
@@ -83,10 +83,12 @@ In order to enable this capability, first we need to show the "MasterNodes" tab 
 - 5\. Exit and restart the cold wallet. You should now see the "Masternodes" tab on the left hand side below "Transactions".
 
 <div align="center">
-<img src="/images/mn-tab.png" style="width:168px;height:400px;"/>
+<img src="images/mn-tab.png" style="width:168px;height:400px;"/>
 </div>
 
+
 <br/>
+
 
 # Generate Private Key
 
