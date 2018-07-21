@@ -56,13 +56,13 @@ In order to enable this capability, first we need to show the "MasterNodes" tab 
 
 - 1\. Choose Settings -> Options to open the options window.
 
-<img src="/images/win-pacoptions.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/win-pacoptions.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
 
 ## Mac OS
 
 - 1\. Choose Paccoin Core -> Preferences to open the options window.
 
-<img src="/images/mac-pacoptions.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/mac-pacoptions.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
 
 
 <br/>
@@ -70,7 +70,7 @@ In order to enable this capability, first we need to show the "MasterNodes" tab 
 
 - 3\. Select "Show Masternodes Tab" 
 
-<img src="images/mac-wallet-pref.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}images/mac-wallet-pref.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
 <div class="callout callout--info">
     <p>
@@ -132,11 +132,11 @@ The Private Key is used as a shared secret betwen your desktop cold wallet and y
 
 - 1\. From your $Pac Desktop Wallet, select Tools -> Debug Console
 
-<img src="/images/tools-debug.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/tools-debug.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
 
 You will see the following window, and a command line at the bottom to type commands:
 
-<img src="/images/debug-console.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/debug-console.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
 
 <br/>
 
@@ -151,7 +151,7 @@ masternode genkey
 
 - 3\. Press Enter, and you will see a long alphanumeric string of characters as in the screenshot below. This is a new Private Key for your Masternode.
 
-<img src="/images/genkey.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/genkey.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
 <br/>
 
@@ -168,7 +168,7 @@ The number of $Pac coins needed to collateralize a Masternode is *exactly* 500k 
 
 Every MN you own needs to have a unique label. If this is your first Masternode, you can label it as "MN1". Follow these steps and refer to the screenshot:
 
-<img src="/images/receive.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/receive.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
 
 - 1\. Select the Receive tab on the left hand side of the cold wallet.
@@ -179,7 +179,7 @@ Every MN you own needs to have a unique label. If this is your first Masternode,
 
 - 4\. Click the "Request Payment" button. A new dialogue window will appear, similar to the screen shot below:
 
-<img src="/images/receive2.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/receive2.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
 
 - 5\. Click the "Copy Address" button, which will copy the address into your clipboard. Close the dialogue window to return to the main wallet and proceed to the next step.
 
@@ -188,7 +188,7 @@ Every MN you own needs to have a unique label. If this is your first Masternode,
 
 We will now send the required 500k $Pac collateral to the unique address we just created above. Since we also created a unique label (e.g. "MN1"), we can easily identify the correct address when sending it to ourselves. See the screen shot below and *carefully* follow the steps:
 
-<img src="/images/send.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/send.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
 - 1\. Select the Send tab on the left hand side of the desktop wallet.
 
@@ -224,11 +224,11 @@ Once your transaction has been confirmed at least 15 times, follow the steps bel
 
 - 1\. From your $Pac Desktop Wallet, select Tools -> Debug Console
 
-<img src="/images/tools-debug.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/tools-debug.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
 
 You will see the following window, and a command line at the bottom to type commands:
 
-<img src="/images/debug-console.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/debug-console.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
 
 <br/>
 
