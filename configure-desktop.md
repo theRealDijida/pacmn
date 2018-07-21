@@ -70,7 +70,7 @@ In order to enable this capability, first we need to show the "MasterNodes" tab 
 
 - 3\. Select "Show Masternodes Tab" 
 
-<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}images/mac-wallet-pref.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/mac-wallet-pref.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
 <div class="callout callout--info">
     <p>
