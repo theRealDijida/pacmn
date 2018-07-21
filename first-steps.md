@@ -70,7 +70,7 @@ icon directly below
 ```
 Click the <i class="fas fa-copy"></i> copy button above (directly below the command) to copy to your clipboard for easy copy/paste into your ssh program (see below):
 
-<img src="/images/click.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/click.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
 
 <br/>
 <b>Warnings and Gotchas:</b>
