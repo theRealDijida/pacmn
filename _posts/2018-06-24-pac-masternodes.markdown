@@ -29,7 +29,7 @@ page_nav:
 comments: true
 ---
 
-## $Pac is Community
+
 
 The first thing that comes to mind when I think about $Pac is community. Sure, $Pac is a cryptocurrency with a great foundation based on Dash. In a lot of ways it has risen from the ashes of the RCO, more FUD than you can shake a stick at, and more than it's fair share of challenges. Out of all that, and despite all of that, what I have found is that the $Pac community drives the very core of its intrinsic value. 
 

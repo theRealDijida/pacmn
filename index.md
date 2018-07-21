@@ -5,7 +5,7 @@ keywords:
 
 # Hero section
 title: $Pac Masternode Guide
-description: <i>Unofficial</i> Evolving Guide for setting up and <br/> maintaining Masternodes for $Pac 
+description: <i>Unofficial</i> Evolving Guide for setting up and <br/> maintaining Masternodes for $Pac <br/>
 buttons:
     - icon: discord
       content: Discord
@@ -20,14 +20,14 @@ buttons:
 
 # Grid navigation
 grid_navigation:
-    - title: Setting up your first Master Node.
+    - title: First Steps
       excerpt: Step by Step instructions for setting up your first $Pac Masternode
       cta: First Steps
       url: '/first-steps'
     - title: Next Steps
       excerpt: MN Monitoring, Voting, and Useful links
       cta: Next Steps
-      url: /next-steps  
+      url: '/next-steps'  
     - title: Trouble Shooting
       excerpt: Solutions to common problems and helpful tips.
       cta: Read More

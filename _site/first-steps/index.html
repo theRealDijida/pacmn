@@ -49,13 +49,13 @@
 									
 										<a href="/" class="btn btn--dark btn--rounded btn--w-icon btn--w-icon-left">
 											<i class="icon icon--arrow-left"></i>
-											Previous page
+											Home
 										</a>
 									
 									
-										<a href="/governance" class="btn btn--dark btn--rounded btn--w-icon">
+										<a href="/configure-desktop" class="btn btn--dark btn--rounded btn--w-icon">
 											<i class="icon icon--arrow-right"></i>
-											Master Node Voting
+											Configure Desktop Wallet
 										</a>
 									
 								
@@ -77,83 +77,129 @@
 				<div class="row">
 					<div class="col-md-7">
 						<div class="content">
-							<p>Tips Accepted PUWJjXbuRh59Xz9RfcscLw6N2mNWaPWcna</p>
-
-<h1 id="heading-1">Heading 1</h1>
-<h2 id="heading-2">Heading 2</h2>
-
-<h2 id="another-h2">Another H2</h2>
-
-<p>When you see the following callouts:</p>
-<div class="example">Instruction Step
-</div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>type this exact command or use copy to clipboard
-icon directly below
-</code></pre></div></div>
-<p>Click the <i class="fas fa-copy"></i> copy button above (directly below the command) to copy to your clipboard for easy copy/paste into your ssh program.</p>
-
-<p></p>
-
-<div class="example">Hi
-</div>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./paccoin-cli masternode status
-</code></pre></div></div>
-
-<p>
-</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./paccoin-cli mnsync status
-</code></pre></div></div>
-
-<h2 id="break">break</h2>
-
-<p>…</p>
-<p>
-</p>
-<div class="example">Stop Your Master Node</div>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./paccoin-cli stop
-</code></pre></div></div>
-
-<p>Steps to create your Master Node</p>
-<ol>
-  <li>Install your desktop wallet</li>
-  <li>Collatoralize your Master Node</li>
-  <li>Install Master Node server on your VPS</li>
-  <li>Start your Master Node</li>
-  <li>Monitor your Master Node</li>
-</ol>
-
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />  step 1</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />  (2)  step 2</li>
-</ul>
+							<p>&nbsp;</p>
 
 <div class="callout callout--info">
-    <p><strong>Info!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>
+    <strong>MN Hosting Instructions <i>ONLY</i> for Ubuntu 16.0.4 MN hosting.</strong>
+    Although some MN users have had success using other Linux distros/versions (e.g. Debian, Ubuntu 18) and even Windows, no instructions are given here for those operating systems.
+    </p> 
 </div>
 
+<h1 id="how-to-use-this-guide">How to Use this Guide</h1>
+
+<p>Hosting your own Masternode (MN) can be one of the most rewarding experiences for those wanting to invest and grow their investment in $Pac. At the same time, MN hosting <em>may</em> be too complicated for some. I’ve tried to simplify these instructions as much as possible (and heavily borrowing from other guides), however if any of these instructions seem too daunting or intimidating, there are alternatives to hosting a $Pac MN yourself.</p>
+
+<p>Shared Masternode services allow investors without the full amount of collateralization needed for an MN (500K $Pac) to pool resources with other investors into a shared MN. There are a few shared MN services that exist. One that I would recommend is <a href="https://pacnode.net/" target="_blank">Pacnode.net</a>. <a href="https://pacnode.net/" target="_blank">Pacnode</a> has one of the best interfaces and services for the casual investor and is constantly innovating new features into their service. These shared MN services charge a percentage fee for hosting and may be a better option for you.</p>
+
+<p>Now that you are ready to jump into exciting world of Masternode hosting, here is a quick flyover of the steps we will take to set up your MN:</p>
+
+<p><b>Steps to create your Master Node</b></p>
+<ol>
+  <li>Getting Ready</li>
+  <li>Configure your desktop wallet</li>
+  <li>Install Master Node server on your VPS</li>
+  <li>Start your Master Node</li>
+  <li>Monitor your Master Node and collect rewards</li>
+</ol>
+
+<hr />
+
+<p>As we go along, you will notice some guideposts along the way including:</p>
+
+<p><b>Steps that are important to follow in order:</b></p>
+
+<ul>
+  <li>1. Step 1</li>
+  <li>2. Step 2</li>
+</ul>
+
+<p><br />
+<b>Call outs for typing in commands:</b></p>
+<div class="example">Instruction Step
+</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">type </span>this exact <span class="nb">command </span>or use copy to clipboard
+icon directly below
+</code></pre></div></div>
+<p>Click the <i class="fas fa-copy"></i> copy button above (directly below the command) to copy to your clipboard for easy copy/paste into your ssh program (see below):</p>
+
+<p><img src="/images/click.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;" /></p>
+
+<p><br />
+<b>Warnings and Gotchas:</b></p>
 <div class="callout callout--warning">
-    <p><strong>Lorem ipsum dolor sit amet!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p><strong>Pay extra attention!</strong> </p>
 </div>
 
-<div class="callout callout--danger">
-    <p><strong>Lorem ipsum dolor sit amet!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><br /></p>
+
+<h1 id="text-editor">Text Editor</h1>
+
+<p>Before starting, let’s get our favorite text editor ready to go. This part will save you a lot of time as you can copy/past items instead of typing them in directly. If you are on Windows, you can use the built in <strong>Notepad</strong> program. For Mac, you can use the <strong>Notes</strong> application. Here are some good alternatives that are also free for both Windows and OSX:</p>
+<ul>
+  <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (used to create this site)</li>
+  <li><a href="https://atom.io/" target="_blank">Atom</a></li>
+  <li><a href="https://www.sublimetext.com/" target="_blank">Sublime</a></li>
+</ul>
+
+<h1 id="communicating-with-your-hosted-mn-server">Communicating with your hosted MN Server</h1>
+
+<div class="callout callout--info">
+    <p>
+    There are 2 separate parts to a Masternode setup: Your <strong>Cold aka Desktop Wallet</strong> and your <strong>Hot aka MN server wallet. </strong>In this guide, we will be referring to cold and desktop interchangeably, as well as hot and MN/server.
+    </p> 
 </div>
 
-<div class="callout callout--success">
-    <p><strong>Lorem ipsum dolor sit amet!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h2 id="ssh-client">SSH Client</h2>
+<p>SSH is a secure network protocol for communicating with your remote Masternode server. If you are using Mac OSX as your desktop wallet, then you already have an ssh client installed via the terminal application. If you are on Windows, you can download the free and opensource <a href="https://www.putty.org/" target="_blank">Putty</a> program. Another good Windows ssh client is <a href="https://www.bitvise.com/ssh-client">Bitvise</a> (thanks Artsy!). Once downloaded and installed, proceed to the next step.</p>
+
+<h3 id="generating-ssh-keys">Generating SSH Keys</h3>
+<div class="callout callout--info">
+    <p>
+    This step is completely optional, but <i>highly recommended</i>. Configuring SSH keys for your local desktop machine will save time as you can export your public key to your MN server and only remember a single password instead of having to type in the password to your remote server every time you login. If this seems too daunting, no big deal, <a href="#next-step-configure-desktop-wallet">skip this step and proceed to the next set of instructions.</a>
+    </p> 
 </div>
 
-<p>… which is shown in the screenshot below:
-<img src="http://localhost:4000/images/ninja.png" alt="My helpful screenshots l" /></p>
+<h5 id="mac-osx">Mac OSX</h5>
+<p>Follow this <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-mac" target="_blank">link</a> from the github help docs for instructions on generating a new ssh key pair.</p>
 
-<p>Here’s the first post’s excerpt:</p>
+<p>Once you’ve followed those steps, then:</p>
 
-<p><strong>  $Pac Masternodes </strong></p>
+<ul>
+  <li>1. Execute the command below to copy your newly generated public key onto the clipboard:</li>
+</ul>
+
+<div class="example">Copy Public SSH Key to Clipboard
+</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pbcopy &lt; ~/.ssh/id_rsa.pub
+</code></pre></div></div>
+<p>and then</p>
+
+<ul>
+  <li>2. Paste them into your text editor (Command-V).</li>
+</ul>
+
+<h4 id="windows">Windows</h4>
+<p><a href="https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows" target="_blank">Easy Instructions</a> from the Joyent docs for configuring a new ssh key pair for Putty. If you are using Bitvise, easy instructions are found <a href="https://www.bitvise.com/public-keys-in-ssh" target="_blank">here</a>.
+<br /></p>
+
+<p>Follow all of the steps including step 8. Now that your public key is copied to the clipboard, paste it into your text editor from the <a href="#text-editor">previous step</a> (Ctrl+V).</p>
+
+<p><br /></p>
+
+<h2 id="next-step-configure-desktop-wallet">Next Step: Configure Desktop Wallet</h2>
+
+<p><br /></p>
+
+<p>You’ve now made sure to have both a text editor, ssh environment, and (optionally) ssh key pair generated. 
+We’re now ready to <a href="/configure-desktop">Configure the desktop cold wallet</a> which will be used to both collateralize and remote start our Masternode server.</p>
+
+<p><br /></p>
+
+<p><em>If you find yourself stuck</em>, the $Pac community is always there to help. You can find the support channel on the <a href="http://discord.me/pac" target="_blank">$Pac Official Discord</a>.</p>
+
+<p><br />
+<br /></p>
 
 						</div><!-- /.content -->
 					</div><!-- /.col -->
@@ -210,12 +256,12 @@ icon directly below
 								
 									<a href="/" class="page-nav__item page-nav__item--prev">
 										<i class="icon icon--arrow-left"></i>
-										Previous page
+										Home
 									</a><!-- /.page-nav__item -->
 								
 								
-									<a href="/governance" class="page-nav__item page-nav__item--next">
-										Master Node Voting
+									<a href="/configure-desktop" class="page-nav__item page-nav__item--next">
+										Configure Desktop Wallet
 										<i class="icon icon--arrow-right"></i>
 									</a><!-- /.page-nav__item -->
 								
