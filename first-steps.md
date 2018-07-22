@@ -135,7 +135,7 @@ Follow all of the steps including step 8. Now that your public key is copied to 
 <br/>
 
 You've now made sure to have both a text editor, ssh environment, and (optionally) ssh key pair generated. 
-We're now ready to [Configure the desktop cold wallet](/configure-desktop) which will be used to both collateralize and remote start our Masternode server.
+We're now ready to [Configure the desktop cold wallet]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/configure-desktop) which will be used to both collateralize and remote start our Masternode server.
 
 <br/>
 
