@@ -40,6 +40,9 @@ A quick reminder of where we are below:
 <div class="callout callout--warning">
     <p>Make sure that you are using the <i>latest</i> $Pac wallet from the official $Pac website at <a href="https://wallets.paccoin.net/" target="_blank">https://wallets.paccoin.net/</a>. The current version is <i>v0.12.3.1</i> which you can verify by going to "About PaccoinCore" in Windows: File -> About or Mac: Paccoin Core -> About. 
     </p>
+
+    <br/>
+    It is 
     <p>
     You will also need 500k of $Pac in order to collateralize your Masternode.
     </p>
@@ -279,7 +282,7 @@ This is your unique collateral tx id for this Masternode.
 
 <br/>
 
-Now that we have properly collateralized our MN, our next step is to [Install your Masternode server](/install-server) on your remote vps.
+Now that we have properly collateralized our MN, our next step is to [Install your Masternode server]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/install-server) on your remote vps.
 
 <br/>
 <br/>
