@@ -90,7 +90,11 @@
 
 <p>Hosting your own Masternode (MN) can be one of the most rewarding experiences for those wanting to invest and grow their investment in $Pac. At the same time, MN hosting <em>may</em> be too complicated for some. I’ve tried to simplify these instructions as much as possible (and heavily borrowing from other guides), however if any of these instructions seem too daunting or intimidating, there are alternatives to hosting a $Pac MN yourself.</p>
 
-<p>Shared Masternode services allow investors without the full amount of collateralization needed for an MN (500K $Pac) to pool resources with other investors into a shared MN. There are a few shared MN services that exist. One that I would recommend is <a href="https://pacnode.net/" target="_blank">Pacnode.net</a>. <a href="https://pacnode.net/" target="_blank">Pacnode</a> has one of the best interfaces and services for the casual investor and is constantly innovating new features into their service. These shared MN services charge a percentage fee for hosting and may be a better option for you.</p>
+<p>Shared Masternode services allow investors without the full amount of collateralization needed for an MN (500K $Pac) to pool resources with other investors into a shared MN. There are a few shared MN services that exist. One that I would recommend is <a href="https://pacnode.net/" target="_blank">Pacnode.net</a>.</p>
+
+<p><a href="https://pacnode.net/" target="_blank"><img src="/images/pacnode.png" style="margin-left: auto;margin-right: auto;width: 30%;" /></a></p>
+
+<p><a href="https://pacnode.net/" target="_blank">Pacnode</a> has one of the best interfaces and services for the casual investor and is constantly innovating new features into their service. These shared MN services charge a percentage fee for hosting and may be a better option for you. I have vested interest in Pacnode, I just know a lot of investors are happy with the service.</p>
 
 <p>Now that you are ready to jump into exciting world of Masternode hosting, here is a quick flyover of the steps we will take to set up your MN:</p>
 
@@ -153,14 +157,11 @@ icon directly below
 <h2 id="ssh-client">SSH Client</h2>
 <p>SSH is a secure network protocol for communicating with your remote Masternode server. If you are using Mac OSX as your desktop wallet, then you already have an ssh client installed via the terminal application. If you are on Windows, you can download the free and opensource <a href="https://www.putty.org/" target="_blank">Putty</a> program. Another good Windows ssh client is <a href="https://www.bitvise.com/ssh-client">Bitvise</a> (thanks Artsy!). Once downloaded and installed, proceed to the next step.</p>
 
-<h3 id="generating-ssh-keys">Generating SSH Keys</h3>
-<div class="callout callout--info">
-    <p>
-    This step is completely optional, but <i>highly recommended</i>. Configuring SSH keys for your local desktop machine will save time as you can export your public key to your MN server and only remember a single password instead of having to type in the password to your remote server every time you login. If this seems too daunting, no big deal, <a href="#next-step-configure-desktop-wallet">skip this step and proceed to the next set of instructions.</a>
-    </p> 
-</div>
+<h2 id="generating-ssh-keys">Generating SSH Keys</h2>
 
-<h5 id="mac-osx">Mac OSX</h5>
+<p>Configuring SSH keys for your local desktop machine will save time as you can export your public key to your MN server and only remember a single password instead of having to type in the password to your remote server every time you login.</p>
+
+<h3 id="mac-osx">Mac OSX</h3>
 <p>Follow this <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-mac" target="_blank">link</a> from the github help docs for instructions on generating a new ssh key pair.</p>
 
 <p>Once you’ve followed those steps, then:</p>
@@ -179,11 +180,19 @@ icon directly below
   <li>2. Paste them into your text editor (Command-V).</li>
 </ul>
 
-<h4 id="windows">Windows</h4>
+<h3 id="windows">Windows</h3>
 <p><a href="https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows" target="_blank">Easy Instructions</a> from the Joyent docs for configuring a new ssh key pair for Putty. If you are using Bitvise, easy instructions are found <a href="https://www.bitvise.com/public-keys-in-ssh" target="_blank">here</a>.
 <br /></p>
 
 <p>Follow all of the steps including step 8. Now that your public key is copied to the clipboard, paste it into your text editor from the <a href="#text-editor">previous step</a> (Ctrl+V).</p>
+
+<p><br /></p>
+
+<div class="callout callout--info">
+    <p>
+    We'll be using the public ssh key you just generated above when we deploy our virtual private server to install the Masternode software. Be sure to follow the steps and paste the public key into your text editor to have it ready to go.
+    </p> 
+</div>
 
 <p><br /></p>
 

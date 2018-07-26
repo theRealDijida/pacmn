@@ -176,7 +176,7 @@ Every MN you own needs to have a unique label. If this is your first Masternode,
 
 - 1\. Select the Receive tab on the left hand side of the cold wallet.
 
-- 2\. Type a unique name for your Masternode (e.g. "MN1", in the screenshot it is labeled "MyMN1").
+- 2\. Type a unique name for your Masternode's _receive_ address (e.g. "MN1", in the screenshot it is labeled "MyMN1").
 
 - 3\. Type in 500000 in the Amount field.
 
@@ -186,6 +186,11 @@ Every MN you own needs to have a unique label. If this is your first Masternode,
 
 - 5\. Click the "Copy Address" button, which will copy the address into your clipboard. Close the dialogue window to return to the main wallet and proceed to the next step.
 
+<div class="callout callout--warning">
+    <p>
+    The image above is just an example, please don't send any $Pac to it. I'll just have to send it back ;-) The address you generate with the steps above will be unique to you, albeit public on the network.
+    </p>
+</div>
 
 ## Send 500k Collateral
 

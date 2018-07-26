@@ -42,238 +42,235 @@ A quick reminder of where we are below:
 
 Your VPS (Virtual Private Server) hosts the $Pac Masternode software and contains your hot wallet. While your cold aka desktop wallet can be shut down and offline, your hot wallet aka MN server must be connected to the internet and always running the $Pac Masternode server software. 
 
-There are many vps hosts out there. This guide will walk you through setting up your $Pac Masternode on [Vultr.com](https://www.vultr.com/?ref=7481728), a popular vps hosting provider. If you are setting up your Masternode on another VPS host, follow the basic steps set up here with those for your specific host. The general process should be the same except for Vultr.com specifics.
+There are many vps hosts out there. This guide will walk you through setting up your $Pac Masternode on a popular hosting provider: Vultr. 
+
+
+If you want to use my referral link, you can click here: [https://www.vultr.com/?ref=7481728](https://www.vultr.com/?ref=7481728) or the image belwo (full disclosure, I get credits on hosting if you use this). 
+
+<a href="https://www.vultr.com/?ref=7481728"><img src="https://www.vultr.com/media/banner_1.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"></a>
+
+<br/>
+
+If not, _no biggie_ (I know, I even feel like taking a shower after putting up that referral link), just go directly here [Vultr.com](https://www.vultr.com). If you are setting up your Masternode on another VPS host, follow the basic steps set up here with those for your specific host. The general process should be the same except for Vultr specifics. Once you are done registering and setting up your account information and billing, proceed ahead.
+
+<br/>
+<div class="callout callout--warning">
+    <p>
+    When setting up your vps hosting account, please make your passwords sufficiently secure.
+    </p>
+</div>
+
+
+<br/>
+
 
 # Create Your VPS Instance
 
+## Create New VPS
+
+
+Once you login into your vultr dashboard, click on the "Server" tab to the left hand side of the screen. Refer to the screen shot below and follow the steps:
+
+<br/>
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/v-servers.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+<br/>
+- 1\. Click on the blue circle to create your virtual private server to host your $Pac Masternode.
+
+
+## Choose Hosting Location
+
+Vultr has a lot of datacenters you can choose from to host your vps instance. Refer to the screen shot below and follow the next step: 
+
+<br/>
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/v-servers-location.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+<br/>
+
+<div class="callout callout--info">
+    <p>
+    Although you can pick whichever you want, I personally recommend choosing a US based server. Why? As of this writing, almost 45% of the Masternodes currently on the network reside in US based datacenters. MNs, especially when first starting, need to constantly synch and communicate with each other. If you choose a datacenter location that is far away from a community of MNs then it will take a tiny bit longer for each communication. 
+    </p>
+    <p>
+    This is a really small amount, so it may not bother you. You can see the current Masternode node at the <a href="http://explorer.paccoin.net/map" target="_blank">$Pac Explorer site</a>
+    </p> 
+</div>
+
+
+- 2\. Choose any server location, as seen in the screen shot below. Just please don't pick Miami. I don't know why, but I've had several users with issues in that datacenter location with vultr. I myself have had issues there as well, with random reboots. Any other location should be fine. 
+
+
+Once you've selected a location, proceed ahead.
+
+## Choose Server Type and Size
+
+In this step, you will select the operating system for your Masternode as well as the virtual server size. The supported and recommended operating system is **Ubuntu 16.04** and the recommended vps size is the **$5/mo** plan on vultr which will give you 1Gb of RAM for the vps. 
+
+
+I know, I know, lots of users are hosting multi-coins on their vps, maybe even using Debian, or installing the MN onto a raspberry Pi. More power to you if you can do it. This configuration: **Ubuntu 16.04 and 1Gb RAM ($5/mo plan)** is the recommended configuration and will end up giving you the smoothest Masternode experience.
+
+From the screen shot below:
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/v-servers-type-size.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+- 3\. Select **Ubuntu 16.04**
+- 4\. Select the **$5/mo** plan (25GB SSD, 1 CPU, 1024MB Memory)
+
+## Configure SSH
+
+Recall from the First Steps section, where we [generated ssh keys]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/first-steps#generating-ssh-keys) for communicating securely with our Masternode server. Have your text editor ready where you had previously copied your public ssh key and follow the steps below, referencing the screen shots:
+
+<br/>
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/v-servers-ssh-host.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+<br/>
+
+- 5\. Click "Add New" button under the "SSH Keys" section which will lead you to the screen below:
+
+<br/>
+
+
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/v-servers-ssh-add.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+<br/>
+
+- 6\. Enter a name in this field, whatever you want.
+
+- 7\. From your text editor, where you copy/pasted your public ssh keys, copy the complete string and paste it into this field.
+
+- 8\. Click the "Add SSH Key" button.
+
+You'll be directed to the previous screen. We are nearly done setting up the vps.
+
+## Set Hostname and Deploy
+
+Setting a unique hostname for your Masternode vps can be quite handy, especially if you plan on setting up more than one Masternode. I recommend setting a name for your vps host which is the same as the _Unique MN Receive Address_ you configured in [step 2 of Configure Your Desktop Wallet/Create Unique MN Wallet Address]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/configure-desktop/#create-unique-mn-wallet-address). This will help you keep track of your Masternodes, especially when you are running multiple MNs.
+
+
+Refer to the screen shot below and follow the steps:
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/v-servers-deploy.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+<br/>
+
+- 9\. Enter a hostname for your vps, e.g. "MyMN1".
+
+- 10\. Click the "Deploy Now" button.
+
+You will be sent back to the Servers tab of your Vultr dashboard with your newly created vps instance and see something like the screen shot below:
+
+<br/>
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/v-servers-info.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+
+- 11\. Click the "copy" icon next to your vps "IP Address" and paste it into your text editor. We will need Your new VPS IP Address in the section, where we install the $Pac Masternode software.
+
+<div class="callout callout--info">
+    <p>
+    Make sure to double check all of your information (see screen shot). You'll notice that following the naming scheme as explained in this guide will make your life much easier, especially as you invest in more $Pac masternodes. Also, in the sceen shot, in the upper right, you'll see some icons that may come into use at a later point in time to stop and restart your vps.
+    </p> 
+</div>
+
+
+In the next section, we'll connect from our desktop to our remote vps and install the $Pac Masternode software.
+
+
 # Install $Pac Masternode Software
 
+## Login via SSH to your Remote VPS
 
+From your desktop, we'll first set up a secure remote ssh session to the vps you just created. Follow the instructions below for your particular operating system. You will need the IP Address of the vps you just created.
 
-## Windows
+### Windows
 
-- 1\. Choose Settings -> Options to open the options window.
+You can find instructions on connecting to your vps via putty using the link below. Go to the section labeled "Log in to PuTTY with the private key". These instructions can be found here:
 
-<img src="/images/win-pacoptions.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
+[https://support.rackspace.com/how-to/logging-in-with-an-ssh-private-key-on-windows/](https://support.rackspace.com/how-to/logging-in-with-an-ssh-private-key-on-windows/){:target="_blank"}.
 
-## Mac OS
+Once you've established your ssh session to your vps, proceed to the next step [Install $Pac Masternode Script](#install-$pac-masternode-script).
 
-- 1\. Choose Paccoin Core -> Preferences to open the options window.
+### Mac
 
-<img src="/images/mac-pacoptions.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-
+Open Launchpad and search for the application "Terminal". A basic terminal shell window will open. You may want to expand the size so it is easier to see the output. 
 
 <br/>
-- 2\. Click on the Wallet Tab
 
-- 3\. Select "Show Masternodes Tab" 
 
-<img src="/images/mac-wallet-pref.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
-
-<div class="callout callout--info">
-    <p>
-    You <i>may</i> want to also select "Enable coin control features" for convenience (recommended). Don't worry about this or any of the other checkboxes for now. The only one you <i>really</i> need to select is "Show Masternodes Tab".
-    </p> 
+<div class="example" >Type the following into your terminal shell
 </div>
+```
+ssh root@YOUR_IP_ADDRESS
+```
 
-- 4\. Click "OK" to close the options window
 
-- 5\. Exit and restart the cold wallet. You should now see the "Masternodes" tab on the left hand side below "Transactions".
+- 1\. In your terminal shell at the prompt, type the line above, replacing 'YOUR_IP_ADDRESS' with the ip address of your vps, for example,if your vps IP Address is 127.0.0.1, you would type 'ssh root@127.0.0.1'. See the sceenshot below as an example:
 
-<div align="center">
-<img src="/images/mn-tab.png" style="width:168px;height:400px;"/>
-</div>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/ssh-login.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
-<br/>
+- 2\. Press Enter.
+- 3\. You will be prompted for the passphrase you entered when generating your key pair. Type in your passphrase and hit enter.
 
-# Generate Private Key
 
-Now that we've restarted the $Pac cold wallet to show the masternodes tab, we now need to generate a _Masternode Private Key_ for your Masternode. 
+## Set Language Locale
 
-<br/>
+If you are using a different language on your desktop machine than English, you will need to execute the following steps. This is necessary because part of the $Pac Masternode install process involves setting up a support process called Sentinel. This process will fail if your vps is set to a non-english locale. When you connect to your vps remotely via ssh (as in the prior step), your ssh client will automatically set your desktop locale onto the ssh session of your remote vps. This means that if you are in Paris, *even though* your vps location is in New York, your ssh session will be set to the French locale and your $Pac MN install will fail.
 
-<div class="callout callout--info">
-    Each Masternode has a unique set of parameters used for identification and validation in a unique set of values for each Masternode:
-    <br/>
-    <br/>
-    <ul>
-        <li>
-            <i>Unique Masternode Private Key</i> for secure remote starts from cold/desktop to hot/masternode (this step).
-        </li>
-        <li>
-            <i>Unique Masternode IP Address</i> for your MN vps to participate in the MN Network and second tier functions e.g. InstantSend
-        </li>
-        <li>
-            <i>Unique Masternode Wallet Address</i> - the address where your MN rewards are sent.
-        </li>
-        <li>
-            <i>Unique Masternode Collateral Output</i> - transaction output id of the 500K $Pac you send to yourself.
-        </li>
-        <li>
-            <i>Unique Masternode Label</i> to be used in your desktop/cold wallet's masternode.conf file
-        </li>
-    </ul>
-    <br/>
-    Don't worry if all of the above doesn't make sense to you now, they will all be explained as we continue setup.
-     
-</div>
+Copy and paste the following into your ssh client and press enter:
 
-<br/>
-The Private Key is used as a shared secret betwen your desktop cold wallet and your remote masternode, which is then used to authenticate rpc (remote procedure call) commands from your cold wallet. You'll need the Private Key in subsequent steps. Be sure to have your [Text Editor](/first-steps#text-editor) ready .
-
-<br/>
----
-
-<br/>
-
-- 1\. From your $Pac Desktop Wallet, select Tools -> Debug Console
-
-<img src="/images/tools-debug.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-
-You will see the following window, and a command line at the bottom to type commands:
-
-<img src="/images/debug-console.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-
-<br/>
-
-- 2\. Type the following command in the input field (see blue arrow above). You can also click the copy icon below to copy the command onto your clipboard and paste them into the field using: Windows: Ctrl+V or Mac: Command+V.
-
-<div class="example" >Generate Masternode Private Key
+<div class="example" >Set English Locale
 </div>
 ```bash
-masternode genkey
+export LC_ALL="en_US.UTF-8"
 ```
-<br/>
-
-- 3\. Press Enter, and you will see a long alphanumeric string of characters as in the screenshot below. This is a new Private Key for your Masternode.
-
-<img src="/images/genkey.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
-
-<br/>
-
-- 4\. Select the whole sequence of characters, then copy/paste them into your text editor. We will need the MN Private Key you just created in 2 different places as part of the setup. Once you've copied the MN Private Key to your text editor, close out of the Debug Console and return to the main wallet screen.
-
-<br/>
 
 
-# Collateralize Masternode
+## Install $Pac Masternode Script
 
-The number of $Pac coins needed to collateralize a Masternode is *exactly* 500k (500,000). You will need to send this exact amount to yourself from your desktop wallet. 
+Next we will install the $Pac Masternode software from the offical $Pac Github Repository. 
 
-## Create Unique MN Wallet Address
+Copy and Paste the following into your terminal. This will pull down the installer script for the $Pac MN process (paccoind) as well as the Sentinel process (more on this later). Clicking the copy icon will automatically copy this onto your clipboard.
 
-Every MN you own needs to have a unique label. If this is your first Masternode, you can label it as "MN1". Follow these steps and refer to the screenshot:
-
-<img src="/images/receive.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+**Note** If you can't see all of the text above, scroll horizontally.
 
 
-- 1\. Select the Receive tab on the left hand side of the cold wallet.
-
-- 2\. Type a unique name for your Masternode (e.g. "MN1", in the screenshot it is labeled "MyMN1").
-
-- 3\. Type in 500000 in the Amount field.
-
-- 4\. Click the "Request Payment" button. A new dialogue window will appear, similar to the screen shot below:
-
-<img src="/images/receive2.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-
-- 5\. Click the "Copy Address" button, which will copy the address into your clipboard. Close the dialogue window to return to the main wallet and proceed to the next step.
-
-
-## Send 500k Collateral
-
-We will now send the required 500k $Pac collateral to the unique address we just created above. Since we also created a unique label (e.g. "MN1"), we can easily identify the correct address when sending it to ourselves. See the screen shot below and *carefully* follow the steps:
-
-<img src="/images/send.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
-
-- 1\. Select the Send tab on the left hand side of the desktop wallet.
-
-- 2\. Click your cursor into the "Pay to" field and paste the address we just copied. On Windows: Ctrl+V and on Mac Command+V. The "Label" field will automatically display the unique name we entered previously. *If* this doesn't auto-populate, then return to the Receive tab, select your newly created receive address, double click it to open up the dialogue and copy the address again (step 5 above), and paste it again.
-
-<div class="callout callout--warning">
-    <p><strong>Be Careful!</strong></p>
-    <p>
-    Make sure to double check that you are sending to the correct address in the steps above. 
-    </p>
-    <p>
-    Additionally, if this is not your first Masternode, be sure to create a unique label and address for each one of your Masternodes. Not doing so will cause you a lot of grief as reusing addresses will mean you will only get paid for each unique.
-    </p>
-</div>
-
-- 3\. Type in *exactly* 500000 in the "Amount" field.
-
-- 4\. Click "Send" at the bottom of the screen.
-
-- 5\. Enter your passphrase when prompted, select "Yes" to send, and your 500k $Pac transaction will be sent to the network to be confirmed on the blockchain.
-
-## Get Collateral Tx Id
-
-Now that you've sent yourself the necessary 500k $Pac collateral to a unique MN wallet address, we'll want to wait for 15 confirmations of the transaction. You can see how many confirmations your transaction has by selecting the "Transactions" tab and hovering your cursor over the transaction entry. 
-
-<div class="callout callout--info">
-    <p>
-    Initially, your transaction is sent to the memory pool to be validated for its first confirmation. Every block that is mined "confirms" all previous transactions on the block chain. $Pac aims to average 2.6 minutes per block, and you will need 15 blocks to be mined and added to the block chain before your MN collateral is valid to enable your Masternode. These times vary however (network difficulty, network hashing power). You can see updating blocks as they move from the <a href="http://explorer.pachub.io/" target="_blank">$Pac Insight Explorer</a>. You can also get average daily blocks mined as well as a wealth of other information from sites such as <a href="https://masternodes.online/currencies/PAC/" target="_blank">Masternodes.online</a>.
-    </p> 
-</div>
-
-Once your transaction has been confirmed at least 15 times, follow the steps below to create the Collateral Tx Id needed:
-
-- 1\. From your $Pac Desktop Wallet, select Tools -> Debug Console
-
-<img src="/images/tools-debug.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-
-You will see the following window, and a command line at the bottom to type commands:
-
-<img src="/images/debug-console.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
-
-<br/>
-
-- 2\. Type the following command in the input field (see blue arrow above). You can also click the copy icon below to copy the command onto your clipboard and paste them into the field using: Windows: Ctrl+V or Mac: Command+V.
-
-<div class="example">Display Collateral Tx Id
+<div class="example" >$Pac MN Installer (click copy icon)
 </div>
 ```bash
-masternode outputs
-```
-<br/>
-
-- 3\. Press Enter, and you will see a long alphanumeric string of characters in quotation marks, a colon, then either "0" or "1", as in the example below:
-
-```json
-{
-
-"a89rhtuyf23jd84120942acce447830aa83lkdl3k39s73m" : "1"
-
-}
-```
-- 4\. Copy *only* the line and full string(not the '{' and '}' brackets) and paste onto your text editor.
-
-- 5\. Remove all quote characters (") as well as the colon (:) and make sure that there is a single space between the end of the long string and the "0" or "1". From the example above, your final string should look similar to this:
-
+wget https://raw.githubusercontent.com/PACCommunity/PAC/master/pacmn.sh && chmod +x pacmn.sh && ./pacmn.sh
 ```
 
-a89rhtuyf23jd84120942acce447830aa83lkdl3k39s73m 1
-```
+If you used the copy icon, you can simply paste using - Windows: Ctrl+V or Mac: Command+V into your ssh client.
+Otherwise press enter to continue.
 
-<br/>
-This is your unique collateral tx id for this Masternode.
+You will be prompted for 2 pieces of information: 1) Your VPS IP Address from the previous step, and 2) Your Masternode Private Key.
+Both of these should be in your text editor from previous steps. Enter the information when prompted.
 
 <br/>
 
 <div class="callout callout--warning">
     <p>
-    If this isn't your first Masternode, you will see multiple entries (1 for each MN: the 500K sent to yourself). Make sure you choose the new entry for the MN you are currently configuring. Not doing so will cause a lot of grief and prevent your Masternode from properly starting. 
-    </p>
+    You will see a lot of information scrolling in the window as the installer progresses. 
+    <strong>If you see ANY ERRORS</strong> do not continue with the following steps, just bookmark your progress here, and refer to the trouble shooting section of this guide. Most of what I've seen are errors in the sentinel install at the tail end of the process.
+    </p> 
 </div>
-<br/>
 
-- 6\. Close out of the Debug Console and return to the main wallet screen.
+## Install $Pac MN Service
 
-<br/>
 
-## Next Step: Install Masternode
 
-Now that we have properly collateralized our MN, our next step is to [Install the Masternode server](/install-server) on your remote vps.
+# Configure Desktop Masternode Config File
+
+# Remote Start Masternode
+
+
+## Next Step: Start Your Masternode
+
+Now that we've installed our Masternode software, our next step is to [Start the Masternode](/start-mn) so that it is visible on the network.
 
 
 
