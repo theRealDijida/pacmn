@@ -46,7 +46,7 @@ Shared Masternode services allow investors without the full amount of collateral
 
 
 
-[Pacnode](https://pacnode.net/){:target="_blank"} has one of the best interfaces and services for the casual investor and is constantly innovating new features into their service. These shared MN services charge a percentage fee for hosting and may be a better option for you. I have vested interest in Pacnode, I just know a lot of investors are happy with the service.
+[Pacnode](https://pacnode.net/){:target="_blank"} has one of the best interfaces and services for the casual investor and is constantly innovating new features into their service. These shared MN services charge a percentage fee for hosting and may be a better option for you. I **DO NOT HAVE ANY** vested interest in Pacnode, I just know a lot of investors are happy with the service.
 
 
 Now that you are ready to jump into exciting world of Masternode hosting, here is a quick flyover of the steps we will take to set up your MN:
