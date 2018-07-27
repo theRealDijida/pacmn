@@ -25,7 +25,7 @@ grid_navigation:
       cta: First Steps
       url: '/first-steps'
     - title: Next Steps
-      excerpt: MN Monitoring, Voting, and Useful links
+      excerpt: Voting and Useful links
       cta: Next Steps
       url: '/next-steps'  
     - title: Trouble Shooting

@@ -247,8 +247,17 @@ wget https://raw.githubusercontent.com/PACCommunity/PAC/master/pacmn.sh && chmod
 If you used the copy icon, you can simply paste using - Windows: Ctrl+V or Mac: Command+V into your ssh client.
 Otherwise press enter to continue.
 
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/ssh1.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
 You will be prompted for 2 pieces of information: 1) Your VPS IP Address from the previous step, and 2) Your Masternode Private Key.
-Both of these should be in your text editor from previous steps. Enter the information when prompted.
+Both of these should be in your text editor from previous steps. Enter the information when prompted and press enter.
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/ssh3.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+You'll see a lot of information scrolling through your ssh terminal session as the installer script first installs and starts your Masternode server process `paccoind` and then the support process `sentinel` (along with its entry into crontab). 
+
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/ssh4.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
 <br/>
 
@@ -259,18 +268,57 @@ Both of these should be in your text editor from previous steps. Enter the infor
     </p> 
 </div>
 
+<br/>
+
+At the very end you should a message indicating that your $Pac MN and Sentinel has been successfully installed. 
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/ssh5.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+<br/>
+
+
 ## Install $Pac MN Service
 
+Next we will add an entry into a `systemd` which will do 2 very important things:
+
+1. Autostart your $Pac Masternode process `paccoind` whenever your VPS boots up (or reboots). This rarely happens, but it does happen if there are issues on the vultr side and their hosting equipment.
+
+2. Restart your `paccoind` immediately if the process fails for whatever reason. This is also rare, but better safe than sorry.
+
+**Note** This script is from foxD one of the $Pac developers. Give him a huge thanks on Discord!
+
+<div class="example" >$Pac SystemD Service (click copy icon)
+</div>
+```bash
+wget https://gist.githubusercontent.com/foxrtb/b703ae761472c5599c4d83ab0d3d62ae/raw/e8913deb9e1b7cc9c649febd2942930e4f6f5127/add-systemd-from-script && chmod +x add-systemd-from-script && ./add-systemd-from-script
+```
+
+If you used the copy icon, you can simply paste using - Windows: Ctrl+V or Mac: Command+V into your ssh client.
+Otherwise press enter to continue. You should see something similar to the screen shot below:
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/ssh6.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+<br/>
+
+## Verify Synchronization
+
+Before our Masternode can be remotely started from our desktop wallet, we'll want our MN's local blockchain and listing of other MN's, Governance objects, etc, to be fully synchronized with the $Pac network. To do this, execute the following command and wait until the "AssetId" field shows `999` as in the screen shot. This can take 10 - 15 minutes. To check again, simply press the 'UP' arrow to display the previous command and hit enter.
+
+<div class="example" >$Pac SystemD Service (click copy icon)
+</div>
+```bash
+./paccoin-cli mnsync status
+```
+
+If you used the copy icon, you can simply paste using - Windows: Ctrl+V or Mac: Command+V into your ssh client.
+Otherwise press enter to continue. You should see something similar to the screen shot below when your MN is fully synched:
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/ssh8.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
 
 
-# Configure Desktop Masternode Config File
+# Next Step: Start Your Masternode
 
-# Remote Start Masternode
-
-
-## Next Step: Start Your Masternode
-
-Now that we've installed our Masternode software, our next step is to [Start the Masternode](/start-mn) so that it is visible on the network.
+Now that we've installed our Masternode software, our next step is to [Start the Masternode](/start-mn) so that it is visible on the $Pac network.
 
 
 

@@ -34,6 +34,16 @@ comments: true
     </p> 
 </div>
 
+
+---
+<br/>
+
+<div class="callout callout--info">
+    <p>
+    Going through this guide for the first time should take approximately 30 minutes to a full hour. This isn't meant to be a quick and dirty guide, as we will cover some important information along the way. If you are setting up another Masternode, you can simply follow the steps quickly and use the copy features for the command lines. A short 1 page quick and dirty guide will be coming soon.
+    </p> 
+</div>
+
 # How to Use this Guide
 
 Hosting your own Masternode (MN) can be one of the most rewarding experiences for those wanting to invest and grow their investment in $Pac. At the same time, MN hosting *may* be too complicated for some. I've tried to simplify these instructions as much as possible (and heavily borrowing from other guides), however if any of these instructions seem too daunting or intimidating, there are alternatives to hosting a $Pac MN yourself. 
@@ -79,8 +89,16 @@ Click the <i class="fas fa-copy"></i> copy button above (directly below the comm
 
 <img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/click.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
 
+
+This will also include the new line character for convenience (so you don't have to press enter after pasting using this method).
+
+
+To paste after copying using for Windows: Ctrl+V and for Mac: Command+V.
+
+
+
 <br/>
-<b>Warnings and Gotchas:</b>
+<b>Warnings and Gotchas:</b> are displayed in yellow callouts as shown below.
 <div class="callout callout--warning">
     <p><strong>Pay extra attention!</strong> </p>
 </div>
@@ -89,18 +107,39 @@ Click the <i class="fas fa-copy"></i> copy button above (directly below the comm
 
 # Text Editor
 
-Before starting, let's get our favorite text editor ready to go. This part will save you a lot of time as you can copy/past items instead of typing them in directly. If you are on Windows, you can use the built in <strong>Notepad</strong> program. For Mac, you can use the <strong>Notes</strong> application. Here are some good alternatives that are also free for both Windows and OSX:
+Before starting, let's get our favorite standby text editor ready to go. This part will save you a lot of time as you can copy/past items instead of typing them in directly. If you are on Windows, you can use the built in <strong>Notepad</strong> program. For Mac, you can use the <strong>Notes</strong> application. Here are some good alternatives that are also free for both Windows and OSX:
 - [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"} (used to create this site)
 - [Atom](https://atom.io/){:target="_blank"}
 - [Sublime](https://www.sublimetext.com/){:target="_blank"}
 
-# Communicating with your hosted MN Server
+<br/>
+
+# Basic $Pac Network Overview
+
+
 
 <div class="callout callout--info">
     <p>
-    There are 2 separate parts to a Masternode setup: Your <strong>Cold aka Desktop Wallet</strong> and your <strong>Hot aka MN server wallet. </strong>In this guide, we will be referring to cold and desktop interchangeably, as well as hot and MN/server.
+    There are 2 separate parts to a Masternode setup: Your <strong>Cold aka Desktop Wallet</strong> and your <strong>Hot aka MN server wallet. </strong>In this guide, we will be referring to cold and desktop interchangeably, as well as hot and MN/server as show below
     </p> 
 </div>
+
+
+For the purposes of this guide, there are 3 main components of the $Pac Masternode Network that are important (this *is not* meant to be a detailed explanation of how the network is constructed, you can google that).
+
+1. Desktop with $Paccoin Core Desktop Wallet installed, aka cold wallet: This is the main $Pac wallet, where you can send and receive $Pac as well as **remotely** start your Masternode and broadcast its address and collateral id onto the $Pac Network.
+
+2. VPS with $Pac Masternode software and Sentinel installed, aka hot wallet: This is where the $Pac MN process `paccoind` runs participating in the second tier of the $Pac network, supporting instant sends (instantPac). It is also where the `sentinel` program resides, which periodically broadcasts your MN presence to other Masternodes.
+
+3. $Pac Network: This is where the core nodes and all of the other $Pac Masternodes reside. Both your desktop as well as your Masternode connect to the network to syncrhonize their copies of the $Pac blockchain and, importantly, this is where your Masternode gets validated. The network of $Pac MNs also decides which MN will receive the next block reward.
+
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/pacdiagram.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+<br/>
+
+# Communicating with your hosted MN Server
+
 
 
 ## SSH Client
@@ -144,7 +183,7 @@ Follow all of the steps including step 8. Now that your public key is copied to 
 
 <br/>
 
-## Next Step: Configure Desktop Wallet
+# Next Step: Configure Desktop Wallet
 
 <br/>
 
@@ -152,6 +191,9 @@ You've now made sure to have both a text editor, ssh environment, and (optionall
 We're now ready to [Configure the desktop cold wallet]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/configure-desktop) which will be used to both collateralize and remote start our Masternode server.
 
 <br/>
+
+---
+
 
 _If you find yourself stuck_, the $Pac community is always there to help. You can find the support channel on the [$Pac Official Discord](http://discord.me/pac){:target="_blank"}. 
 

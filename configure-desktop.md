@@ -283,7 +283,7 @@ This is your unique collateral tx id for this Masternode.
 
 <br/>
 
-## Next Step: Install Masternode
+# Next Step: Install Masternode
 
 <br/>
 
