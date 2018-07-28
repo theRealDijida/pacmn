@@ -46,6 +46,29 @@ A quick reminder of where we are below:
 </div>
 
 
+# $Pac Masternode Monitoring Websites
+
+Next we will use one of the web based monitoring tools for your new $Pac Masternode. The web based monitoring apps are important, and you should get to know them. Not only do they have some important information, but they can also be sent as links to your mobile phone (in addition to the mobile monitoring apps in the next section).
+
+In order for your $Pac Masternode to receive its first reward, it has to achieve "Active Time". In addition to being in an **ENABLED** state, Active Time is achieved by being on the network as a new MN for a minimum of X minutes which is calculated as: **X = (Number of MNs) * 2.6 minutes**. So, if your MN is created when there are 5,000 MNs on the network, your new MN will achieve Active Time in 5,000 * 2.6 minutes, or 13,000 minutes or about 9 days and 40 miniutes. Once your Masternode achieves active time, it will be put into *Position #1* in the Payable Pool (more on that later).
+
+Click the following link which will open in a new browser window: [http://monitor.masternodes.work/monitor](http://monitor.masternodes.work/monitor){:target="_blank"}. 
+
+
+There are a few websites that help you to monitor your $Pac Masternode
+
+- [http://pacmaster.nomukaiki.com/](http://pacmaster.nomukaiki.com/){:target="_blank"}
+
+- [http://monitor.masternodes.work/monitor](http://monitor.masternodes.work/monitor){:target="_blank"}
+
+- [http://stats.foxrtb.com/monitor.html](http://stats.foxrtb.com/monitor.html){:target="_blank"}
+
+You'll want to refer to one of these sites as your MN is running (as well as using the mobile apps in the next section) in order to see the status and position of your Masternode in the Payment Queue (first 2 links). In $Pac Masternode payment logic, each MN that is in **ENABLED** state and **Active** on the network holds a "position" in line for rewards. As each block is mined, and a reward awarded to the selected MN, each Masternode in the queue moves up one position. MN's eligible for payment must be in the front 10% of the queue, known as the "Payable Pool". The nuance here is that this pool is random with increasing probability of being selected the longer an MN is in the pool. So, for example, with 5,000 MNs on the network, the Payable Pool would consist of MN's in position 1-500 (front 10%). Your position once in the payable pool should only be indicative, as MNs may be selected at random as soon as they enter the pool (at position 500 for example), or at any other position (hence the randomness). 
+
+You can find details about the payment logic from the excellent [Dash documentation portal](https://docs.dash.org/fr/latest/masternodes/understanding.html#payment-logic){:target="_blank"}.
+
+
+
 # Mobile $Pac Masternode Apps
 
 One of the best ways to monitor your $Pac Masternode on the go is the official $Pac Mobile Masternode Monitoring App. You can find versions for both iOS and Android via the links below:
@@ -58,10 +81,7 @@ One of the best ways to monitor your $Pac Masternode on the go is the official $
 - [Androig App from Google Play](https://play.google.com/store/apps/details?id=com.pac.masternodeapp){:target="_blank"}
 <br/>
 
-<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/pacmnmobile-android.webp" style="display: block;margin-left: auto;margin-right: auto;width: 25%;"/>
-
-# $Pac Masternode Monitoring Websites
-
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/pacmnmobile-android.png" style="display: block;margin-left: auto;margin-right: auto;width: 25%;"/>
 
 # Collecting Rewards
 
@@ -69,7 +89,7 @@ One of the best ways to monitor your $Pac Masternode on the go is the official $
 
 # Next Step: Voting and Useful Links
 
-Welcome to the $Pac Masternode community! Next, find out more information on [Voting and Useful Links](/next-steps).
+Welcome to the $Pac Masternode community! Next, find out more information on [Voting and Useful Links]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/next-steps).
 
 
 

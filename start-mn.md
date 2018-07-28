@@ -140,7 +140,7 @@ Make sure that the status says "Masternode successfully started":
 
 # Next Step: Monitor Your Masternode
 
-Your Masternode is now up and running! Our next step is to [Monitor Your Masternode](/monitor-mn) and collect rewards.
+Your Masternode is now up and running! Our next step is to [Monitor Your Masternode]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/monitor-mn) and collect rewards.
 
 
 

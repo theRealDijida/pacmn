@@ -318,7 +318,7 @@ Otherwise press enter to continue. You should see something similar to the scree
 
 # Next Step: Start Your Masternode
 
-Now that we've installed our Masternode software, our next step is to [Start the Masternode](/start-mn) so that it is visible on the $Pac network.
+Now that we've installed our Masternode software, our next step is to [Start the Masternode]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/start-mn) so that it is visible on the $Pac network.
 
 
 
