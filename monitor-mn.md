@@ -55,7 +55,7 @@ In order for your $Pac Masternode to receive its first reward, it has to achieve
 
 Click the following link which will open in a new browser window: [http://pacmaster.nomukaiki.com/](http://pacmaster.nomukaiki.com/){:target="_blank"}. Enter your Masternode's IP Address in the field indicated and click the search button:
 
-<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/monitor-mn.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/monitormn.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
 This is an excellent web monitor from nomukaiki.
 
