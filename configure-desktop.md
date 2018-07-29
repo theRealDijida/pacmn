@@ -5,7 +5,7 @@ keywords:
 comments: false
 
 # Hero section
-title: Configure Your Desktop Wallet
+title: Configure Your Desktop
 description: 
 
 
