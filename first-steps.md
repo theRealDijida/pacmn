@@ -40,7 +40,7 @@ comments: true
 
 <div class="callout callout--info">
     <p>
-    Going through this guide for the first time should take approximately 30 minutes to a full hour. This isn't meant to be a quick and dirty guide, as we will cover some important information along the way. If you are setting up another Masternode, you can simply follow the steps quickly and use the copy features for the command lines. A short 1 page quick and dirty guide will be coming soon.
+    Going through this guide for the first time should take approximately 30 minutes to a full hour. This isn't meant to be a quick and dirty guide, as we will cover some important information along the way. If you are setting up another Masternode, you can simply follow the steps quickly and use the copy features for the command lines. Alternatively, you can also use the quick <a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/one-page">One Page Guide</a>.
     </p> 
 </div>
 

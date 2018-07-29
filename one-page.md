@@ -1,6 +1,6 @@
 ---
 # Page settings
-layout: default
+layout: default-nonav
 keywords:
 comments: false
 
@@ -10,7 +10,7 @@ description: Quick 1 Page MN Setup Instructions
 
 
 # Micro navigation
-micro_nav: true
+micro_nav: 
 
 # Page navigation
 page_nav:

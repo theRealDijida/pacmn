@@ -49,11 +49,15 @@ A quick reminder of where we are below:
 # $Pac Masternode Monitoring Websites
 
 Next we will use one of the web based monitoring tools for your new $Pac Masternode. The web based monitoring apps are important, and you should get to know them. Not only do they have some important information, but they can also be sent as links to your mobile phone (in addition to the mobile monitoring apps in the next section).
+The reason why we want to use a monitor site/app **_AND NOT_** the desktop wallet is because of 2 reasons: 1) Monitoring sites are connected to the network, and now the $Pac network sees your Masternode in terms of status is all that matters in terms of getting rewards (it is after all, a decentralized, quorum based network) and 2) as mentioned previously, the desktop wallet has a known bug that shows the wrong status and it will both freak you out as well as cause constant heartburn looking at it. **_THE DESKTOP WALLET FOR MN STATUS IS EVIL_**. Repeat that again and you will be fine.
 
 In order for your $Pac Masternode to receive its first reward, it has to achieve "Active Time". In addition to being in an **ENABLED** state, Active Time is achieved by being on the network as a new MN for a minimum of X minutes which is calculated as: **X = (Number of MNs) * 2.6 minutes**. So, if your MN is created when there are 5,000 MNs on the network, your new MN will achieve Active Time in 5,000 * 2.6 minutes, or 13,000 minutes or about 9 days and 40 miniutes. Once your Masternode achieves active time, it will be put into *Position #1* in the Payable Pool (more on that later).
 
-Click the following link which will open in a new browser window: [http://monitor.masternodes.work/monitor](http://monitor.masternodes.work/monitor){:target="_blank"}. 
+Click the following link which will open in a new browser window: [http://pacmaster.nomukaiki.com/](http://pacmaster.nomukaiki.com/){:target="_blank"}. Enter your Masternode's IP Address in the field indicated and click the search button:
 
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/monitor-mn.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+This is an excellent web monitor from nomukaiki.
 
 There are a few websites that help you to monitor your $Pac Masternode
 
