@@ -38,6 +38,7 @@ A quick reminder of where we are below:
 - [x] &nbsp; ~~4. Start your Master Node~~
 - [ ] &nbsp; <mark>5. Monitor your Master Node and collect rewards</mark>
 
+<br/>
 
 <div class="callout callout--info">
     <p>
@@ -45,15 +46,36 @@ A quick reminder of where we are below:
     </p> 
 </div>
 
+<br/>
+
+When you first create a new $Pac Masternode, it will go through several stages from its first inception to its first payment. Masternodes have a status on the $Pac network. Initially, when new, it will be in the state **WATCHDOG_EXPIRED** for about 15 minutes while your new MN's IP Address, Collateral Tx ID, etc is broadcast, validated, and propagated through the network. It will then go to **ENABLED** state. The is the state that you want your Masternode to be in **_All the Time_** as it means that it has been validated by the network and is available to receive reward payments. 
+
+In order for your $Pac Masternode to receive its first reward, it has to achieve `Active Time`. In addition to being in an **ENABLED** state, Active Time is achieved by being on the network as a new MN for a minimum of X minutes which is calculated as: `X = (Number of MNs) * 2.6 minutes`. So, if your MN is created when there are 5,000 MNs on the network, your new MN will achieve Active Time in 5,000 * 2.6 minutes, or 13,000 minutes or about 9 days and 40 miniutes. Once your Masternode achieves active time, it will be put into *Position #1* in the Payable Pool. Refer to the diagram below as we step through the lifecycle of Masternode payments.
+
+<br/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/pacpayment.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+
+- (1) This is where we are now, your new created $Pac Masternode is brand new on the network, and in about 15 minutes should go to "Enabled" status. As noted previously, **_DO NOT USE YOUR DESKTOP WALLET'S MASTERNODE TAB FOR STATUS!!! EVER!!!_**. Instead, we'll use one of the monitoring websites described in the next section.
+- (2) Once your new Masternode goes from `WATCHDOG_EXPIRED` to `ENABLED` status, your new MN now needs to achieve `Active Time` as described above.
+- (3) Now that your new MN has achieved `Active Time`, and is in `ENABLED` status, it will immediately get "pushed" into position 1 in the payable pool, which is the front 10% of enabled MNs active on the network. As an example, if there are 5,000 MNs enabled in the network, the front 10% payable pool would be those MNs in position 1-500. 
+- (4) Quorum selection for the Masternode to get paid in the next mined block on the block chain uses an algorithm that is random with increasing probability of getting selected based on the amount of time spent in the payable pool. Remember, your position is relative and probabilistic, and as new MNs join the network achieving their own active time, all other MNs will get pushed back 1 in the queue.
+- (5) Each block mined on the blockchain distributes 10,350 $Pac to the selected MN for rewards payment. Every MN in the queue moves up 1 in position.
+- (6) Your Masternode gets selected and paid, _Yippeee!!!_. Your MN will now go to the end of the payable queue.
+
+You can find details about the payment logic from the excellent [Dash documentation portal](https://docs.dash.org/fr/latest/masternodes/understanding.html#payment-logic){:target="_blank"}.
+
+Next let's go to some online monitors where we can see your new $Pac Masternode's **status** and other statistics.
+
 
 # $Pac Masternode Monitoring Websites
 
 Next we will use one of the web based monitoring tools for your new $Pac Masternode. The web based monitoring apps are important, and you should get to know them. Not only do they have some important information, but they can also be sent as links to your mobile phone (in addition to the mobile monitoring apps in the next section).
-The reason why we want to use a monitor site/app **_AND NOT_** the desktop wallet is because of 2 reasons: 1) Monitoring sites are connected to the network, and now the $Pac network sees your Masternode in terms of status is all that matters in terms of getting rewards (it is after all, a decentralized, quorum based network) and 2) as mentioned previously, the desktop wallet has a known bug that shows the wrong status and it will both freak you out as well as cause constant heartburn looking at it. **_THE DESKTOP WALLET FOR MN STATUS IS EVIL_**. Repeat that again and you will be fine.
+The reason why we want to use a monitor site/app **_AND NOT_** the desktop wallet is because of 2 reasons: 1) Monitoring sites are connected to the network, and how the $Pac network sees your Masternode in terms of status is all that matters in terms of getting rewards (it is after all, a decentralized, quorum based network) and 2) as mentioned previously, the desktop wallet has a known bug that shows the wrong status and it will both freak you out as well as cause constant heartburn looking at it. **_THE DESKTOP WALLET FOR MN STATUS IS EVIL_**. Repeat that again and you will be fine.
 
-In order for your $Pac Masternode to receive its first reward, it has to achieve "Active Time". In addition to being in an **ENABLED** state, Active Time is achieved by being on the network as a new MN for a minimum of X minutes which is calculated as: **X = (Number of MNs) * 2.6 minutes**. So, if your MN is created when there are 5,000 MNs on the network, your new MN will achieve Active Time in 5,000 * 2.6 minutes, or 13,000 minutes or about 9 days and 40 miniutes. Once your Masternode achieves active time, it will be put into *Position #1* in the Payable Pool (more on that later).
 
-Click the following link which will open in a new browser window: [http://pacmaster.nomukaiki.com/](http://pacmaster.nomukaiki.com/){:target="_blank"}. Enter your Masternode's IP Address in the field indicated and click the search button:
+
+Click the following link (an excellent web monitor from Nomukaiki) which will open in a new browser window: [http://pacmaster.nomukaiki.com/](http://pacmaster.nomukaiki.com/){:target="_blank"}. 
 
 <br/>
 
@@ -61,21 +83,38 @@ Click the following link which will open in a new browser window: [http://pacmas
 
 <br/>
 
-This is an excellent web monitor from nomukaiki.
+Click the search button
 
-There are a few websites that help you to monitor your $Pac Masternode
+<br/>
 
-- [http://pacmaster.nomukaiki.com/](http://pacmaster.nomukaiki.com/){:target="_blank"}
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/monitormn2.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
 
-- [http://monitor.masternodes.work/monitor](http://monitor.masternodes.work/monitor){:target="_blank"}
+<br/>
 
-- [http://stats.foxrtb.com/monitor.html](http://stats.foxrtb.com/monitor.html){:target="_blank"}
+Enter your MN's IP Address and select it. You should see something like the screen shot below. (Note, I used random MN's ip address for this example)
 
-You'll want to refer to one of these sites as your MN is running (as well as using the mobile apps in the next section) in order to see the status and position of your Masternode in the Payment Queue (first 2 links). In $Pac Masternode payment logic, each MN that is in **ENABLED** state and **Active** on the network holds a "position" in line for rewards. As each block is mined, and a reward awarded to the selected MN, each Masternode in the queue moves up one position. MN's eligible for payment must be in the front 10% of the queue, known as the "Payable Pool". The nuance here is that this pool is random with increasing probability of being selected the longer an MN is in the pool. So, for example, with 5,000 MNs on the network, the Payable Pool would consist of MN's in position 1-500 (front 10%). Your position once in the payable pool should only be indicative, as MNs may be selected at random as soon as they enter the pool (at position 500 for example), or at any other position (hence the randomness). 
+<br/>
 
-You can find details about the payment logic from the excellent [Dash documentation portal](https://docs.dash.org/fr/latest/masternodes/understanding.html#payment-logic){:target="_blank"}.
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/monitormn3.png" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
+
+<br/>
+
+Here you can see your Masternode's status (If it is in `WATCHDOG_EXPIRED` it should go to `ENABLED` in about 15 minutes), as well as the time left to be payable, this is the amount of time left to achieve Active Time as explained above. You can also see at the top the number of MNs on the network, including the number of MNs that are in a payable state. You can bookmark this link and send it to your smart phone which is handy for checking your MN's status. 
+
+Another good monitoring site is from [http://monitor.masternodes.work/monitor](http://monitor.masternodes.work/monitor){:target="_blank"}:
 
 
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/monitormn4.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
+
+<br/>
+
+as well as [http://stats.foxrtb.com/monitor.html](http://stats.foxrtb.com/monitor.html){:target="_blank"}
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/monitormn5.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
+
+<br/>
+
+You'll want to refer to one of these sites as your MN is running (as well as using the mobile apps in the next section) in order to see the status and position of your Masternode in the Payment Queue (first 2 links). 
 
 # Mobile $Pac Masternode Apps
 
@@ -90,10 +129,6 @@ One of the best ways to monitor your $Pac Masternode on the go is the official $
 <br/>
 
 <img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/pacmnmobile-android.png" style="display: block;margin-left: auto;margin-right: auto;width: 25%;"/>
-
-# Collecting Rewards
-
-
 
 # Next Step: Voting and Useful Links
 
