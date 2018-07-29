@@ -118,7 +118,7 @@ You'll want to refer to one of these sites as your MN is running (as well as usi
 
 # Mobile $Pac Masternode Apps
 
-One of the best ways to monitor your $Pac Masternode on the go is the official $Pac Mobile Masternode Monitoring App. You can find versions for both iOS and Android via the links below:
+One of the best ways to monitor your $Pac Masternode on the go is the official $Pac Mobile Masternode Monitoring App. These apps are excellent and once you enter your $Pac Masternodes into the app, they will show you position, status, as well as send you push notifications when your MN gets paid or enters the payable pool. You can find versions for both iOS and Android via the links below:
 
 - [iOS App from iTunes](https://itunes.apple.com/us/app/masternodes-monitor-%24pac-mn/id1387962793?mt=8){:target="_blank"}
 <br/>
@@ -132,7 +132,7 @@ One of the best ways to monitor your $Pac Masternode on the go is the official $
 
 # Next Step: Voting and Useful Links
 
-Welcome to the $Pac Masternode community! Next, find out more information on [Voting and Useful Links]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/next-steps).
+Welcome to the $Pac Masternode community!!! Next, find out more information on [Voting and Useful Links]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/next-steps).
 
 
 
