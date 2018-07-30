@@ -129,7 +129,7 @@ sudo ~/paccoind
 
 ## Masternode Status is EXPIRED
 
-Follow the same steps for `NEW START REQUIRED`
+Follow the same steps to trouble shoot above for when your MN is showing `NEW START REQUIRED`
 
 ## My MN Isn't Getting Paid
 
