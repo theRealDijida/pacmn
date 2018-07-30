@@ -137,3 +137,26 @@ Follow the same steps to trouble shoot above for when your MN is showing `NEW ST
 - Is your MN's position using the web based monitor in the payable pool? 
 - The payment logic for the payable pool is random with increasing probability of selection, you can find more information [here](https://docs.dash.org/en/latest/masternodes/understanding.html#payment-logic){:target="_blank"}.
 - See stats from [Masternodes Online](https://masternodes.online/currencies/PAC/){:target="_blank"}. These are updated **_and_** an average. For example, if the average payout cycle is 9 days, your MN's current reward cycle may go longer, or shorter. Be sure that it is in the correct status of `ENABLED` and your MN will eventually get paid. Over time, your own average cycle time should converge to the network average.
+
+## I Need to ReHost or Rebuild My MN
+
+Follow these steps if you need to migrate your $Pac MN to another VPS instance or if you are rebuilding onto another server with a _different_ ip address:
+
+1. Shut down your old VPS instance. Eventually, your old IP Address will show `EXPIRED` on the monitoring sites.
+2. Install the $Pac MN server just like you would a _New MN_ with the following differences:
+    - Keep the **_existing_** Private Gen Key when you setup on your new vps.
+    - Update your Desktop Wallet's `masternode.conf` file and change **_only_** the IP Address to the IP Address of your new vps instance. Restart the desktop wallet to pick up the new configuration. 
+    - Install everything the same on the vps server as if it were new
+    - Remote Start your new vps from the desktop wallet
+    - Check the status on the new vps instance: Copy/paste (or type) the following:
+```bash
+./paccoin-cli masternode status
+```
+3. On your vps as a result of the above command, you may see something like 'invalid IP Address' or 'rebroadcast new IP Address'. Wait 10-15 minutes and check status again. It will take a while for the new IP Address to propagate through the network. If after 20 minutes, you still don't get a valid status, choose `Start Alias` again from your desktop wallet.
+
+
+
+# Suggestions?
+
+Hit me up on discord or add a comment below if you have any suggestions to be added to this guide. $Pac is Community!
+
