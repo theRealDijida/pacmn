@@ -123,15 +123,19 @@
 					<div class="col-md-12">
 						<div class="callout callout--info">	
 							{% assign post = site.posts.first %}  
+							<h3>Latest Post</h3>
 							<a href={% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{post.url}}>
-								<h3>Latest Post</h3>
-								<h2></h2>
+								
 								<h5>{{post.date | date: '%B %d, %Y' }}</h5>
 								<h4>{{ post.title}}</h4>
 								<p>
 									{{ post.excerpt }}
 								</p>
 								<p align="center"><bold>. . .</bold></p>
+							</a>
+							<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/feed.xml" style="text-decoration: none">
+							<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/atom-feeds-icon.png" style="border:0;width:50px;height:50px;"/>
+							
 							</a>
 								
 						</div>

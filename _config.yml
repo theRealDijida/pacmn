@@ -47,5 +47,8 @@ exclude: [ 'README.md', 'CHANGELOG.md' ]
 permalink: /:title/
 jekyll.environment: "production"
 
+title: Unofficial $Pac Masternode Guide
+author: dij.ida@dijida.io
+
 plugins:
   - jekyll-feed
