@@ -2,7 +2,7 @@
 # Page settings
 layout: posts
 title:  The Best Masternode Alt-Coin
-description: Page description
+description: $Pac Masternode Network Strength
 date:   2018-07-30 11:31:00 -0400
 
 keywords: Masternodes, ROI

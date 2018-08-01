@@ -2,7 +2,7 @@
 # Page settings
 layout: posts
 title:  "$Pac Masternodes"
-description: Page description
+description: Masternodes and why this guide exists
 date:   2018-06-24 11:07:10 -0400
 
 keywords:
