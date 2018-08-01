@@ -33,23 +33,23 @@ The following sections will go over the important topic of Governance and Voting
 # Proposal Governance and Voting
 
 
-One of the great features of $Pac (and other Dash based forks) is that it functions as a Decentralized Autonomous Organization, or DAO for short. This mechanism allows the community to submit proposals for funding through "super blocks" which are created on the $Pac block chain. These proposals are voted on by **You** the $Pac MN owner, and each MN that you own receives one vote. Indeed, this is one of the most enabling and empowering features of owning a $Pac Masternode. It is also a responsibility that each of us has to register our votes so that the right proposals are voted through and funded. More details as well as a listing of current proposals can be found on foxD's excellent [$Pac Governance site](http://stats.foxrtb.com/gov.html){:target="_blank"}:
+One of the great features of $Pac (and other Dash based forks) is that it functions as a Decentralized Autonomous Organization, or DAO for short. This mechanism allows the community to submit proposals for funding through "super blocks" which are created on the $Pac block chain. These proposals are voted on by **You** the $Pac MN owner, and each MN that you own receives one vote. Indeed, this is one of the most enabling and empowering features of owning a $Pac Masternode. It is also a responsibility that each of us has to register our votes so that the right proposals are voted through and funded. More details as well as a listing of current proposals can be found on the new [PacLyfe Governance Portal](https://www.paclyfe.net/governance){:target="_blank"}:
 
 <br/>
 
-<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/mngov1.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/gov1.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
 <br/>
 
-Clicking on the link for a proposal will show you details on the current vote counts, history, a link to the  proposal details, as well as **the voting string** needed to register your MN's votes onto the network:
+Clicking on the proposal will show you details on the current vote counts, history, a link to the  proposal details, as well as **the voting string** needed to register your MN's votes onto the network:
 
 <br/>
 
-<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/mngov2.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/gov2.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
 
 <br/>
 
-To vote on a proposal, copy the complete voting string starting with `gobject` all the way to `yes`. Go to your desktop wallet's menu: Tools -> Debug console, and paste the entire string as show below:
+To vote on a proposal, click on the desired button (Yes, No, Abstain) which will copy the string needed into your clipboard. Go to your desktop wallet's menu: Tools -> Debug console, and paste the entire string as shown below:
 
 <br/>
 
@@ -71,6 +71,9 @@ That's it! How cool is that? Not only do you have a $Pac Masternode invested wit
 
 
 Below are some links that I use often and may be of interest to you. I'll add more based on feedback:
+
+- [PacLyfe](https://www.paclyfe.net){:target="_blank"} - 
+**_The_** place for Social Interactions with other $Pac Enthusiasts.
 
 - [Masternodes Online](https://masternodes.online/currencies/PAC/){:target="_blank"}
 
