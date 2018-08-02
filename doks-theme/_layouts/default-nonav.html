@@ -83,13 +83,23 @@
 		
 		{% if page.comments == true and site.doks.comments.disqus_forum_shortname %}
 			
-			<div class="section section--grey">
+		<div class="section section--grey">
 				<div class="container">
+					<a href="https://www.paclyfe.net/groups/pac-masternode-investors/" target="_blank">
 					<div class="row">
+							<div class="col-md-2">
+									Questions or comments? Head over to the $Pac Masternode Group at PacLyfe!
+									</div>
 						<div class="col-md-7">
+							<!--
 							{% include comments.html %}
+							-->
+							<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/pl-mngroup.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+							<!-- link to PacLyfe MN group with banner -->
 						</div><!-- /.col -->
+						
 					</div><!-- /.row -->
+				</a>
 				</div><!-- /.container -->
 			</div><!-- /.section -->
 		{% endif %}

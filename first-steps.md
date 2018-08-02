@@ -195,7 +195,7 @@ We're now ready to [Configure the desktop cold wallet]({% if jekyll.environment 
 ---
 
 
-_If you find yourself stuck_, the $Pac community is always there to help. You can find the support channel on the [$Pac Official Discord](http://discord.me/pac){:target="_blank"}. 
+_If you find yourself stuck_, the $Pac community is always there to help. You can find the support channel on the [$Pac Official Discord](http://discord.me/pac){:target="_blank"} as well as the $Pac Masternodes Group in the link below.
 
 <br/>
 <br/>
