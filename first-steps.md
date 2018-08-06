@@ -64,9 +64,9 @@ Now that you're ready to jump into exciting world of Masternode hosting, here is
 <b>Steps to create your Master Node</b>
 1. Getting Ready
 2. Configure your Desktop Wallet
-3. Install MasterNode server on your VPS
-4. Start your MasterNode
-5. Monitor your MasterNode and collect rewards
+3. Install Masternode server on your VPS
+4. Start your Masternode
+5. Monitor your Masternode and collect rewards
 
 -----
 
@@ -188,7 +188,7 @@ Follow all of the steps including step 8. Now that your public key is copied to 
 <br/>
 
 You now have a text editor, ssh environment, and (optionally) ssh key pair generated. 
-We're ready to [Configure the desktop cold wallet]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/configure-desktop) which will be used to collateralize and remote start our Masternode server.
+We're ready to [Configure the desktop cold wallet]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/configure-desktop) which will be used to collateralize and remote start the Masternode server.
 
 <br/>
 
