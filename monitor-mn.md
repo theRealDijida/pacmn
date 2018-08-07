@@ -117,17 +117,27 @@ You'll want to use one of these sites when your MN is running to see the status 
 
 # Mobile $Pac Masternode Apps
 
-One of the best ways to monitor your $Pac Masternode when you're on the go is the official $Pac Mobile Masternode Monitoring App. Once you have your $Pac Masternode in the app, you will be able to see your position and status, as well as getting push notifications when your MN gets paid or enters the payable pool. You can find versions for both iOS and Android via the links below:
+One of the best ways to monitor your $Pac Masternode when you're on the go is using the $Pac Mobile Masternode Monitoring App. Once you have your $Pac Masternode in the app, you will be able to see your position and status, as well as getting push notifications when your MN gets paid or enters the payable pool. You can find versions for both iOS and Android via the links below:
+
+- [Community Developed Android App from Google Play](https://play.google.com/store/apps/details?id=net.pacmonitor.apps.pacmonitor){:target="_blank"} and also the one I use personally. This is a great example of how the $Pac Global Community contributes to the strength of $Pac. The app was written by [5280Viking](https://www.paclyfe.net/members/5280viking/){:target="_blank"} who is also an active Moderator on the $Pac Discord. You can find more info about the app as well as his proposal for funding from [https://pacmonitor.net/](https://pacmonitor.net/){:target="_blank"}
+<br/>
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/viking-mn.png" style="display: block;margin-left: auto;margin-right: auto;width: 25%;"/>
+
+
+- [Android App from Google Play](https://play.google.com/store/apps/details?id=com.pac.masternodeapp){:target="_blank"}
+<br/>
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/pacmnmobile-android.png" style="display: block;margin-left: auto;margin-right: auto;width: 25%;"/>
+
 
 - [iOS App from iTunes](https://itunes.apple.com/us/app/masternodes-monitor-%24pac-mn/id1387962793?mt=8){:target="_blank"}
 <br/>
 
 <img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/pacmnmobile-ios.jpg" style="display: block;margin-left: auto;margin-right: auto;width: 25%;"/>
 
-- [Android App from Google Play](https://play.google.com/store/apps/details?id=com.pac.masternodeapp){:target="_blank"}
-<br/>
 
-<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/pacmnmobile-android.png" style="display: block;margin-left: auto;margin-right: auto;width: 25%;"/>
+
 
 # Next Step: Voting and Useful Links
 
