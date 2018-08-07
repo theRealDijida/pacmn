@@ -29,7 +29,7 @@ comments: true
 
 <div class="callout callout--info">
     <p>
-    <strong>These Instructions Are <i>ONLY</i> for Ubuntu 16.0.4 MN hosting.</strong>
+    <strong>These Instructions Are <i>ONLY</i> for hosting your masternode on Ubuntu 16.0.4.</strong>
     Although some masternode users have successfully used other Linux distros/versions (e.g. Debian, Ubuntu 18) and even Windows, this guide is only meant to work with Ubuntu 16.
     </p> 
 </div>
