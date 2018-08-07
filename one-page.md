@@ -31,7 +31,7 @@ comments: true
 
 <div class="callout callout--info">
     <p>
-    This is a quick and dirty cheat sheet guide meant for those already familiar with Masternode setup or if you have already setup your first $Pac Masternode and just want to get it done quickly. It assumes you already know the basics of setting up your ssh keys and navigating the $Pac Desktop wallet
+    This is a quick and dirty cheat sheet guide meant for those already familiar with Masternode setup, or if you already have a $Pac Masternode and just want to get it done quickly. It assumes you already know the basics of setting up your ssh keys and navigating the $Pac Desktop wallet
     </p> 
 </div>
 
@@ -48,7 +48,7 @@ masternode genkey
 ```
 
 
-Copy and save the key generated above into your standby text editor
+Copy the key generated into your text editor
 
 - 3\. Collateralize Masternode: Create a unique Receive Address (e.g. "MyMN1", "MyMN2", etc), and copy this address to your standby text editor. Each MN you own needs its own **unique** address.
 
@@ -64,7 +64,7 @@ masternode outputs
 ```
 
 
-You will see a line for each of your MN's 500K collateral, so if this is your second MN, you will see 2 lines, copy the **new line** to your standby text editor (or the single line if this is your first MN).
+You will see a line for each masternode's 500K collateral, so if this is your second MN, you will see 2 lines. Copy the **new line** to your text editor (or the single line if this is your first MN).
 
 - 6\. Edit the output string in your standby text editor. Remove all double quotes, and make sure there is a space between the end `0` or `1`. It should look something like the following in your text editor:
 
@@ -72,11 +72,11 @@ You will see a line for each of your MN's 500K collateral, so if this is your se
 a89rhtuyf23jd84120942acce447830aa83lkdl3k39s73m 1
 ```
 
-- 7\. Create a new VPS instance and choose `Ubuntu 16.04` and the `$5/mo` plan. Set your ssh keys, set the hostname to the same name as your Receive address in step 3, e.g. "MyMN2" and deploy your instance. Select your vps and copy it's IP Address into your standby editor.
+- 7\. Create a new VPS instance and choose `Ubuntu 16.04` and the `$5/mo` plan. Set your ssh keys, set the hostname to the same name as your Receive address in step 3, e.g. "MyMN2" and deploy your instance. Select your VPS and copy its IP Address into your text editor.
 
-- 8\. Log into your vps instance via ssh.
+- 8\. Log into your VPS instance via ssh.
 
-- 9\. Set the locale (Optional but doesn't hurt)
+- 9\. Set the locale (this is optional but doesn't hurt)
 
 <div class="example" >Set English Locale
 </div>
@@ -100,7 +100,7 @@ Enter your MN IP Address and Private Key when prompted.
 wget https://gist.githubusercontent.com/foxrtb/b703ae761472c5599c4d83ab0d3d62ae/raw/e8913deb9e1b7cc9c649febd2942930e4f6f5127/add-systemd-from-script && chmod +x add-systemd-from-script && ./add-systemd-from-script
 ```
 
-- 12\. Verify Synch, wait for `AssetID` to get to `999`
+- 12\. Verify Sync, wait for `AssetID` to get to `999`
 
 <div class="example" >$Pac SystemD Service (click copy icon)
 </div>
@@ -108,15 +108,15 @@ wget https://gist.githubusercontent.com/foxrtb/b703ae761472c5599c4d83ab0d3d62ae/
 ./paccoin-cli mnsync status
 ```
 
-- 13\. Edit your `masternode.conf` file on your Desktop Wallet: new line with MN alias, IP Address `:7112`, Masternode Private Key, Collateral Output and Index, all separated by spaces as shown below:
+- 13\. Edit the `masternode.conf` file on your Desktop Wallet. Use a new line with MN alias, IP Address `:7112`, Masternode Private Key, Collateral Output and Index, all separated by spaces as shown below:
 
 <img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/mnconf.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
 
-- 14\. Save your `masternode.conf` file, close out of your text editor. **Restart** your $Pac Desktop wallet to pick up the changes.
+- 14\. Save the `masternode.conf` file and close your text editor. **Restart** your $Pac Desktop wallet to apply the changes.
 
-- 15\. Go to Masternode tab, select your MN, then choose `Start Alias` button on bottom. 
+- 15\. Click the Masternode tab, select your MN, then choose `Start Alias` button on bottom. 
 
-- 16\. Verify status on your vps:
+- 16\. Verify the status on your VPS:
 
 <div class="example" >Check MN Status
 </div>
@@ -130,6 +130,6 @@ Make sure that the status says “Masternode successfully started”.
 <br/>
 <br/>
 
-Your Masternode is now up and running! Our next step is to [Monitor Your Masternode]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/monitor-mn) and collect rewards.
+Your Masternode is now up and running! The next step is to [Monitor Your Masternode]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/monitor-mn) and collect rewards.
 
 

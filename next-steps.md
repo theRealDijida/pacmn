@@ -27,13 +27,13 @@ comments: true
 
 <br/>
 
-The following sections will go over the important topic of Governance and Voting and end with a list of useful links to help with your experience of being a $Pac Masternode investor.
+The following sections will go over the important topic of Governance and Voting and end with a list of useful links to help you along your journey as a $Pac Masternode investor.
 
 
 # Proposal Governance and Voting
 
 
-One of the great features of $Pac (and other Dash based forks) is that it functions as a Decentralized Autonomous Organization, or DAO for short. This mechanism allows the community to submit proposals for funding through "super blocks" which are created on the $Pac block chain. These proposals are voted on by **You** the $Pac MN owner, and each MN that you own receives one vote. Indeed, this is one of the most enabling and empowering features of owning a $Pac Masternode. It is also a responsibility that each of us has to register our votes so that the right proposals are voted through and funded. More details as well as a listing of current proposals can be found on the new [PacLyfe Governance Portal](https://www.paclyfe.net/governance){:target="_blank"}:
+One of the great features of $Pac (that it inherited from Dash) is that it functions as a Decentralized Autonomous Organization, or DAO for short. This mechanism allows the community to submit proposals for funding through "super blocks" which are created on the $Pac block chain. These proposals are voted on by **You** as a $Pac MN owner, and each MN on the network receives one vote. This is one of the most enabling and empowering features of owning a $Pac Masternode, and it is our responsibility to vote so that the right proposals are voted through and funded. More details as well as a listing of current proposals can be found on the new [PacLyfe Governance Portal](https://www.paclyfe.net/governance){:target="_blank"}:
 
 <br/>
 
@@ -41,7 +41,7 @@ One of the great features of $Pac (and other Dash based forks) is that it functi
 
 <br/>
 
-Clicking on the proposal will show you details on the current vote counts, history, a link to the  proposal details, as well as **the voting string** needed to register your MN's votes onto the network:
+Clicking on the proposal will show you details on the current vote count, history, a link to the  proposal details, as well as **the voting string** needed to register your MN's vote on the network:
 
 <br/>
 
@@ -65,7 +65,7 @@ If you want to vote **Yes** for the proposal, leave the string as is. If you wan
 
 <br/>
 
-That's it! How cool is that? Not only do you have a $Pac Masternode invested with a great ROI, your MN is also providing valuable services to the $Pac network making your investment even better, and now you are voting as a part of the $Pac Governance Community of MN investors!
+How cool is that? Not only do you have a $Pac Masternode with a great ROI on investment, your MN is provides valuable services to the $Pac network, and now you are voting as a part of the $Pac Governance Community of MN investors!
 
 # Useful Links
 
@@ -75,21 +75,17 @@ Below are some links that I use often and may be of interest to you. I'll add mo
 - [PacLyfe](https://www.paclyfe.net){:target="_blank"} - 
 **_The_** place for Social Interactions with other $Pac Enthusiasts.
 
-- [Masternodes Online](https://masternodes.online/currencies/PAC/){:target="_blank"}
-
+- [Masternodes Online](https://masternodes.online/currencies/PAC/){:target="_blank"} - 
 A great deal of information about your $Pac MN investment updated in realtime.
 
-- [Coin Market Cap](https://coinmarketcap.com/currencies/paccoin/){:target="_blank"}
-
+- [Coin Market Cap](https://coinmarketcap.com/currencies/paccoin/){:target="_blank"} -
 $Pac current price, charts, and market links.
 
-- [$Pac Masternode Map](http://explorer.paccoin.net/map){:target="_blank"}
-
+- [$Pac Masternode Map](http://explorer.paccoin.net/map){:target="_blank"} - 
 Main $Pac explorer. This is a link to the subsection with Masternodes graphed geographically.
 
-- [$Pac Insight Explorer](http://explorer.pachub.io/){:target="_blank"}
-
+- [$Pac Insight Explorer](http://explorer.pachub.io/){:target="_blank"} - 
 $Pac Insight UI Explorer. Check this site to see blocks updated and moving (mined) in real time.
 
 
-As a reminder, the strength of $Pac really is in the community. Make sure you join the $Pac Discord server (links below) as well as follow all of $Pac's Social Media channels.
+Just remember, the strength of $Pac is in the community. Make sure you join the $Pac Discord server (link at bottom of page) as well as following $Pac's Social Media channels.
