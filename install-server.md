@@ -97,7 +97,7 @@ Vultr has a lot of datacenters you can choose from to host your VPS instance. Re
 
 In this step, you will select the operating system for your Masternode as well as the virtual server size. The recommended operating system is **Ubuntu 16.04** and the recommended VPS size is the **$5/mo** plan on vultr which has **1Gb of RAM** for the VPS. 
 
-Please note, 512 Mb servers are much more likely encounter errors. This is because the installation running the node uses almost the full amount of available memmory, any spikes in RAM usuage can lead to failures. Therefore, it is recommeded to allocate **at least 1 Gb** to any device hosting a Masternode, to avoid overloading the instance.
+Please note, 512 Mb servers are much more likely encounter errors. This is because the installation running the node uses almost the full amount of available memmory, any spikes in RAM usuage can lead to failures. Therefore, it is recommeded to allocate **at least 1024 Mb** to any device hosting a Masternode, to avoid overloading the instance.
 
 I know lots of users host multiple masternodes on their vps, or use Debian, or install the MN on a raspberry Pi. More power to you if you can do it. However, using **Ubuntu 16.04 and 1Gb RAM ($5/mo plan)** is the recommended configuration and will give you the smoothest Masternode experience.
 
