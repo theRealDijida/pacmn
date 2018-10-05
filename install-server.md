@@ -284,7 +284,7 @@ Next we will add an entry into `systemd` which will do two very important things
 <div class="example" >$Pac SystemD Service (click copy icon)
 </div>
 ```bash
-wget https://gist.githubusercontent.com/foxrtb/b703ae761472c5599c4d83ab0d3d62ae/raw/e8913deb9e1b7cc9c649febd2942930e4f6f5127/add-systemd-from-script && chmod +x add-systemd-from-script && ./add-systemd-from-script
+sudo wget https://gist.githubusercontent.com/foxrtb/b703ae761472c5599c4d83ab0d3d62ae/raw/e8913deb9e1b7cc9c649febd2942930e4f6f5127/add-systemd-from-script && chmod +x add-systemd-from-script && ./add-systemd-from-script
 ```
 
 If you used the copy icon, you can simply paste using Ctrl+V (for Windows) or Command+V (for Mac) into your ssh client.
