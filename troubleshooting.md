@@ -123,6 +123,12 @@ Some common trouble shooting scenarios are found below:
 sudo ~/paccoind
 ```
     - Check that `paccoind` is running as explained in the earlier section.
+
+- Make sure you have sufficient memory (at least 1GB) **AND** swap space to avoid out of memory errors. If you haven't already, you can copy/paste the command below to create swap space for your server:
+```bash
+sudo fallocate -l 4G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile && echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab && free -h
+```
+
 - Once you get your `paccoind` process back up and running, you'll need to issue a [Remote Start]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/start-mn/#remote-start-your-masternode) of your MN from your desktop wallet. Unfortunately, this will also start your Masternode **_As If_** it were a new Masternode, meaning, you will first have to achieve `Active Time` before becoming payable.
 - Check the web based monitors after 15 minutes to make sure that your MN is in `ENABLED` state.
 

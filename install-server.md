@@ -214,6 +214,14 @@ Copy and paste the following into your ssh client and press enter:
 export LC_ALL="en_US.UTF-8"
 ```
 
+## Add Swap Space
+- Make sure you have sufficient memory (at least 1GB) **AND** swap space to avoid out of memory errors. If you haven't already, you can copy/paste the command below to create swap space for your server:
+
+<div class="example" >Add Swap Space
+</div>
+```bash
+sudo fallocate -l 4G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile && echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab && free -h
+```
 
 ## Install $Pac Masternode Script
 
