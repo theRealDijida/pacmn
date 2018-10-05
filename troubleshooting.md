@@ -35,6 +35,7 @@ See below for a list of helpful commands as well as a section on troubleshooting
 Many issues have occurred lately due to users deploying instances with less than 1 GB of RAM and not having adequate swap space. 
 
 - Make sure you have sufficient memory (at least 1GB) **AND** swap space to avoid out of memory errors. If you haven't already, you can copy/paste the command below to create swap space for your server:
+
 ```bash
 sudo fallocate -l 4G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile && echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab && free -h
 ```
