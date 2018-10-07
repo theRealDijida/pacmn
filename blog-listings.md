@@ -36,7 +36,7 @@ comments: false
 		</div>
 		<div>
             {{ post.excerpt }}
-            <a href="{{ post.url }}">Read more</a>	
+            <a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ post.url }}">Read more</a>	
         </div>
 
 	

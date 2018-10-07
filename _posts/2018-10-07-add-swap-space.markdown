@@ -29,7 +29,7 @@ page_nav:
 comments: true
 ---
 <h1>
-Add Swap Space! 
+Keeping your MN Resilient
 </h1>
 
 Recently, the $Pac network came under attack. You can find details here on the official $Pac site [https://blog.paccoin.net/pac-network-robust-malicious-transaction-attackers/](https://blog.paccoin.net/pac-network-robust-malicious-transaction-attackers/){:target="_blank"}. 
