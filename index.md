@@ -24,6 +24,10 @@ grid_navigation:
       excerpt: Step by Step instructions for setting up your first $Pac Masternode
       cta: First Steps
       url: '/first-steps'
+    - title: One Page Quick Guide
+      excerpt: Concise Quick Guide for Experienced Masternode Holders.
+      cta: Quick Guide
+      url: '/one-page'
     - title: Next Steps
       excerpt: Voting and Useful links
       cta: Next Steps

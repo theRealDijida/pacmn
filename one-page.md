@@ -84,7 +84,15 @@ a89rhtuyf23jd84120942acce447830aa83lkdl3k39s73m 1
 export LC_ALL="en_US.UTF-8"
 ```
 
-- 10\. Install $Pac Masternode Script
+- 10\. Add Swap Space
+
+<div class="example" >Add Swap Space
+</div>
+```bash
+sudo fallocate -l 4G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile && echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab && free -h
+```
+
+- 11\. Install $Pac Masternode Script
 
 <div class="example" >$Pac MN Installer (click copy icon)
 </div>
@@ -94,13 +102,13 @@ wget https://raw.githubusercontent.com/PACCommunity/PAC/master/pacmn.sh && chmod
 
 Enter your MN IP Address and Private Key when prompted.
 
-- 11\. Install $Pac MN Service
+- 12\. Install $Pac MN Service
 
 ```bash
 wget https://gist.githubusercontent.com/foxrtb/b703ae761472c5599c4d83ab0d3d62ae/raw/e8913deb9e1b7cc9c649febd2942930e4f6f5127/add-systemd-from-script && chmod +x add-systemd-from-script && ./add-systemd-from-script
 ```
 
-- 12\. Verify Sync, wait for `AssetID` to get to `999`
+- 13\. Verify Sync, wait for `AssetID` to get to `999`
 
 <div class="example" >$Pac SystemD Service (click copy icon)
 </div>
@@ -108,15 +116,15 @@ wget https://gist.githubusercontent.com/foxrtb/b703ae761472c5599c4d83ab0d3d62ae/
 ./paccoin-cli mnsync status
 ```
 
-- 13\. Edit the `masternode.conf` file on your Desktop Wallet. Use a new line with MN alias, IP Address `:7112`, Masternode Private Key, Collateral Output and Index, all separated by spaces as shown below:
+- 14\. Edit the `masternode.conf` file on your Desktop Wallet. Use a new line with MN alias, IP Address `:7112`, Masternode Private Key, Collateral Output and Index, all separated by spaces as shown below:
 
 <img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/mnconf.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
 
-- 14\. Save the `masternode.conf` file and close your text editor. **Restart** your $Pac Desktop wallet to apply the changes.
+- 15\. Save the `masternode.conf` file and close your text editor. **Restart** your $Pac Desktop wallet to apply the changes.
 
-- 15\. Click the Masternode tab, select your MN, then choose `Start Alias` button on bottom. 
+- 16\. Click the Masternode tab, select your MN, then choose `Start Alias` button on bottom. 
 
-- 16\. Verify the status on your VPS:
+- 17\. Verify the status on your VPS:
 
 <div class="example" >Check MN Status
 </div>
