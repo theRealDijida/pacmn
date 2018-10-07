@@ -28,10 +28,6 @@ page_nav:
 # disqus
 comments: true
 ---
-
-<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/paclyfe-groups.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
-
-<br/>
 <h1>
 Add Swap Space! 
 </h1>
