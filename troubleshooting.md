@@ -110,6 +110,20 @@ you should see the following output:
 ```
 If you don't see an entry like above, then sentinel wasn't properly installed. You may need to reinstall your MN.
 
+<div class="callout callout--warning">
+    <p>
+    If you see errors setting the locale in the installer script and you are getting sentinel install errors, you may need to update the packages installed on your vps instance. Run the following command should fix this, then reboot and rerun the installer.
+    </p> 
+</div>
+
+**_Run command below then reboot, and rerun the installer_**
+
+<div class="example" >Only if sentinel install fails:
+</div>
+```bash
+sudo apt-get update && sudo apt-get dist-upgrade
+```
+
 # Trouble shooting
 
 Some common trouble shooting scenarios are found below:

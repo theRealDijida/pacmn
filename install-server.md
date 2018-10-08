@@ -257,7 +257,7 @@ You'll see a lot of information scrolling through your ssh terminal session as t
     </p> 
 </div>
 
-**_Run command below if previous locale command fails, then reboot, and rerun the installer_**
+**_Run command below, then reboot, and rerun the installer_**
 
 <div class="example" >Only if sentinel install fails:
 </div>
