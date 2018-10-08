@@ -216,9 +216,17 @@ export LC_ALL="en_US.UTF-8"
 
 <div class="callout callout--warning">
     <p>
-    If you see errors setting the locale above, you may need to update the packages installed on your vps instance. Run the following command should fix this: ``sudo apt-get update && sudo apt-get dist-upgrade`` and rerun the above command after.
+    If you see errors setting the locale above, you may need to update the packages installed on your vps instance. Run the following command should fix this and rerun the above command after.
     </p> 
 </div>
+
+**_Run command below if previous locale command fails, then rerun the locale command_**
+
+<div class="example" >Only if Locale fails:
+</div>
+```bash
+sudo apt-get update && sudo apt-get dist-upgrade
+```
 
 
 
