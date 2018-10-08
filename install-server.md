@@ -214,6 +214,14 @@ Copy and paste the following into your ssh client and press enter:
 export LC_ALL="en_US.UTF-8"
 ```
 
+<div class="callout callout--warning">
+    <p>
+    If you see errors setting the locale above, you may need to update the packages installed on your vps instance. Run the following command should fix this: ``sudo apt-get update && sudo apt-get dist-upgrade`` and rerun the above command after.
+    </p> 
+</div>
+
+
+
 ## Add Swap Space
 - Make sure you have sufficient memory (at least 1GB) **AND** swap space to avoid out of memory errors. If you haven't already, you can copy/paste the command below to create swap space for your server:
 
