@@ -202,33 +202,6 @@ ssh root@YOUR_IP_ADDRESS
 - 3\. You will be prompted for the passphrase you entered when generating your ssh key pair. Type in your passphrase and hit enter.
 
 
-## Set Language Locale
-
-If you are not using English on your desktop machine, you will need to execute the following steps. This is necessary because part of the $Pac Masternode install process involves setting up a support process called Sentinel. However, this process will fail if your VPS is set to a non-English locale. When you connect to your VPS remotely via ssh (as in the prior step), your ssh client will automatically set your desktop locale to the ssh session of your remote VPS. This means that if you are in Paris, *even if* your VPS location is in New York, your ssh session will be set to the French locale and your $Pac MN install will fail.
-
-Copy and paste the following into your ssh client and press enter:
-
-<div class="example" >Set English Locale
-</div>
-```bash
-export LC_ALL="en_US.UTF-8"
-```
-
-<div class="callout callout--warning">
-    <p>
-    If you see errors setting the locale above, you may need to update the packages installed on your vps instance. Run the following command should fix this, then reboot and rerun the locale command after.
-    </p> 
-</div>
-
-**_Run command below if previous locale command fails, then reboot, and rerun the locale command_**
-
-<div class="example" >Only if Locale fails:
-</div>
-```bash
-sudo apt-get update && sudo apt-get dist-upgrade
-```
-
-
 
 ## Add Swap Space
 - Make sure you have sufficient memory (at least 1GB) **AND** swap space to avoid out of memory errors. If you haven't already, you can copy/paste the command below to create swap space for your server:
@@ -277,6 +250,20 @@ You'll see a lot of information scrolling through your ssh terminal session as t
     If you see <strong>ANY ERRORS</strong>, do not continue with the following steps, just bookmark your progress here, and refer to the trouble-shooting section of this guide. Most of the errors I've seen are with the sentinel install at the end of the process.
     </p> 
 </div>
+
+<div class="callout callout--warning">
+    <p>
+    If you see errors setting the locale in the installer script and you are getting sentinel install errors, you may need to update the packages installed on your vps instance. Run the following command should fix this, then reboot and rerun the installer.
+    </p> 
+</div>
+
+**_Run command below if previous locale command fails, then reboot, and rerun the installer_**
+
+<div class="example" >Only if sentinel install fails:
+</div>
+```bash
+sudo apt-get update && sudo apt-get dist-upgrade
+```
 
 <br/>
 
