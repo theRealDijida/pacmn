@@ -128,6 +128,22 @@ sudo apt-get update && sudo apt-get dist-upgrade
 
 Some common trouble shooting scenarios are found below:
 
+## Error Starting MN Process
+
+- If your MN process ``paccoind`` stopped due to out of memory errors, your local files may have been corrupted and you will see errors when starting the process, or errors when looking at the status of the systemd service: ``systemctl status pacd --no-pager``. 
+
+Take the following steps to repair your process:
+1. Start your process with the reindex command:
+
+<div class="example" >Reindex Option
+</div>
+```bash
+sudo ~/paccoind -reindex
+```
+2. Check your status using the commands on this page
+3. Verify your MN status on the web monitors.
+
+
 ## New Masternode Status is WATCHDOG
 
 - Make sure that your MN collateral has at least 15 confirmations. 
