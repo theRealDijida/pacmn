@@ -117,18 +117,66 @@ Now that the Masternode is started, let's check to see that it started sucessful
 
 # Verify Your Masternode Status
 
+The follwing commands to help verify your overall setup, these are also a few key commands when verifying problems on a server.
+Use the **up arrow** to re run the commands and you are monitoring status changes. They remain in log as long as the server is up and can be quickly accessed even after you relog in. If locked into the wrong command use **Cntrl + C** to exit certain commands.
+
+### 1- Check Masternode Status
+
 Go back to your ssh client and copy/paste the following into your terminal:
 
 <div class="example" >Check MN Status
 </div>
+
 ```bash
 ./paccoin-cli masternode status
 ```
-
 You should see something similar to the screen shot below. Make sure that the status says "Masternode successfully started":
 
 <br/>
 <img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/mn-status.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;"/>
+
+
+### 2- Synchronization (Asset ID = 999)
+If Status is something other then above re-check sync status by executing the following command and see if "AssetId" field shows `999` as shown in the screen shot. This can take 10 - 15 minutes. 
+
+<div class="example" >$Pac SystemD Service (click copy icon)
+</div>
+
+```bash
+./paccoin-cli mnsync status
+```
+
+Otherwise press enter to continue. You should see something similar to the screen shot below when your MN is fully synched:
+
+<img src="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/images/ssh8.png" style="display: block;margin-left: auto;margin-right: auto;width: 75%;"/>
+
+
+### 3- Check Service Status (If installed)
+
+If you had installed the `systemd` service as explained in the section [Install $Pac MN Service]({% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/install-server/#install-pac-mn-service) copy/paste (or type) the following:
+
+<div class="example" >$Pac SystemD Service (click copy icon)
+</div>
+
+```bash
+systemctl status pacd --no-pager
+```
+
+Check to make sure status is green and their are no errors. This service will help prevent downtime due to failures in the future so it is important is running properly after the satus of the rest of your system is running.
+
+### 4- Check Free Memory
+
+As stated before, it is not a good idea to max the memory. If future updates or something causing the memory to spike it may cause your instance to crash.
+Use this command to check memory status now that everything is installed to confirm you have at plenty of free memory available.
+
+<div class="example" >Checking memory (click copy icon)
+</div>
+
+```bash
+free -m
+```
+
+Note that Linux memory is different and the buff/cache is the available memory.
 
 # Next Step: Monitor Your Masternode
 
